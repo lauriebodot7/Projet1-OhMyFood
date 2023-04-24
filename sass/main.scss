@@ -1,41 +1,45 @@
-/* IMPORT FONT SIZE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
 
-:root {
-    --color-bg-grey-second: #F7F7F7;
-    --color-green-clear: #99E2D0;
-    --color-green-dark: #008766;
-    --color-blue-clear: #89C8FA;
-    --color-blue-dark: #003A68;
-    --color-purple-principal: #9356DC;
-}
-
+/*MAIN PARTY*/ 
+$main-body: #D2D2D2;
+$main-footer: #353535;
 $main-white: #F3F3F3;
 $grey-primaire: #EAEAEA;
 $color-purple-principal: #9356DC;
+$color-bg-grey-second: #F7F7F7;
+$color-green-clear: #99E2D0;
+$color-green-dark: #008766;
+$color-blue-clear: #89C8FA;
+$color-blue-dark: #003A68;
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
 /*HEADER PARTY */
 header {
     width: 100%;
     & nav {
+        height: 7vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: white;
         & img {
             width: 50%;
         }
     }
 }
 
-/* MAIN CONTAINER PARTY */
+/* MAIN BODY CONTAINER PARTY */
 main {
     .main_container_body {
         width: 100%;
+        background-color: $grey-primaire;
         & .header_body_reverse {
             width: 100%;
             display: flex;
@@ -43,10 +47,12 @@ main {
             flex-direction: column;
         }
         & .header_body_reverse_info_lieu {
+            width: 100%;
             height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: $main-body;
         }
         .header_body_reverse_info_button {
             width: 85%;
@@ -65,7 +71,9 @@ main {
             }
         }
         .header_body_reverse_info_fonctionnement {
-            margin: 20px;
+            background-color: white;
+            width: 100%;
+            padding: 20px;
             .header_body_reverse_info_fonctionnement_button {
                 height: 25vh;
                 display: flex;
@@ -81,5 +89,37 @@ main {
                 }
             }
         }
+        .restaurant_articles {
+            .restaurant_articles_cards {
+                margin: 30px 10px;
+                box-shadow: 0 4px 15px -3px grey;
+                border-radius: 20px 20px 0 0;
+                overflow: hidden;
+                height: 26vh;
+                & img {
+                    width: 100%;
+                    height: 19vh;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+        }
     }
 }
+/*FOOTER PARTY */
+footer {
+    width: 100%;
+    background: #353535;
+    color: $main-white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    h3 {
+        font-family: 'Shrikhand', cursive;
+        margin: 20px;
+        font-size: 18px;
+    }
+    .a_propos p {
+        margin: 10px 20px;
+    }
+} 
