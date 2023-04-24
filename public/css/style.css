@@ -1,0 +1,30 @@
+/* IMPORT FONT SIZE */
+
+:root {
+    --main-bg-white: #F3F3F3;
+    --color-green-clear: #99E2D0;
+    --color-green-dark: #008766;
+    --color-blue-clear: #89C8FA;
+    --color-blue-dark: #003A68;
+    --color-purple-principal: #9356DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+.header_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header_nav img {
+    width: 50%;
+}

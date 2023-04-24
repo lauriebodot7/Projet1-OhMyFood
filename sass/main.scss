@@ -1,0 +1,85 @@
+/* IMPORT FONT SIZE */
+
+:root {
+    --color-bg-grey-second: #F7F7F7;
+    --color-green-clear: #99E2D0;
+    --color-green-dark: #008766;
+    --color-blue-clear: #89C8FA;
+    --color-blue-dark: #003A68;
+    --color-purple-principal: #9356DC;
+}
+
+$main-white: #F3F3F3;
+$grey-primaire: #EAEAEA;
+$color-purple-principal: #9356DC;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*HEADER PARTY */
+header {
+    width: 100%;
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img {
+            width: 50%;
+        }
+    }
+}
+
+/* MAIN CONTAINER PARTY */
+main {
+    .main_container_body {
+        width: 100%;
+        & .header_body_reverse {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        & .header_body_reverse_info_lieu {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header_body_reverse_info_button {
+            width: 85%;
+            height: 23vh;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            & button {
+                padding: 20px;
+                border: none;
+                border-radius: 25px;
+                color: $main-white;
+                background: linear-gradient(1turn, $color-purple-principal, #FF79DA);
+            }
+        }
+        .header_body_reverse_info_fonctionnement {
+            margin: 20px;
+            .header_body_reverse_info_fonctionnement_button {
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .choix_button button{
+                    width: 100%;
+                    border: none;
+                    border-radius: 20px;
+                    box-shadow: 0 4px 15px -3px grey;
+                    background-color: white;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
