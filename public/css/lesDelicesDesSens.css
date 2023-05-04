@@ -1,0 +1,19 @@
+/* font familly */
+/*COLOR PARTY*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MAIN PARTY */
+main img {
+  width: 100vw;
+}
+
+.section-gout {
+  width: 100%;
+  background: aqua;
+}
+
+/*# sourceMappingURL=paletteDuGout.css.map */
