@@ -1,0 +1,33 @@
+
+/* font familly */
+
+/*COLOR PARTY*/ 
+$main-body: #D2D2D2;
+$main-footer: #353535;
+$main-white: #F3F3F3;
+$grey-primaire: #EAEAEA;
+$color-purple-principal: #9356DC;
+$color-bg-grey-second: #F7F7F7;
+$color-green-clear: #99E2D0;
+$color-green-dark: #008766;
+$color-blue-clear: #89C8FA;
+$color-blue-dark: #003A68;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN PARTY */
+
+
+main img {
+    width: 100vw;
+}
+
+.section-gout {
+    width: 100%;
+    background: aqua;
+}
