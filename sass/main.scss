@@ -166,7 +166,7 @@ main {
                         -webkit-text-fill-color: transparent;
                         :hover {
                             background: linear-gradient($color-purple-principal, $color-pink-principal);
-                            -webkit-background-clip: text;
+                            background-clip: text;
                             opacity: 1;
                             z-index: 2;
                         }
@@ -194,9 +194,9 @@ footer {
         font-weight: 500;
         font-size: 18px;
     }
-    .a_propos p {
+    .a_propos p{
         margin: 10px 20px;
-    }
+    } 
     .a_propos .flex {
         display: flex;
         align-items: center;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* font familly */
 /*COLOR PARTY*/
 * {
@@ -7,13 +8,116 @@
 }
 
 /* MAIN PARTY */
+header {
+  width: 100%;
+}
+header nav {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  width: 90%;
+}
+header nav .arrow-left {
+  font-size: xx-large;
+  color: black;
+}
+header nav img {
+  width: 50%;
+}
+
 main img {
   width: 100vw;
+  position: absolute;
 }
 
 .section-gout {
   width: 100%;
-  background: aqua;
+  position: relative;
+  background: #EAEAEA;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  top: 195px;
+  margin-bottom: 200px;
+}
+.section-gout .section-title-goût-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-gout .section-title-goût-principal h1 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-style: italic;
+}
+.section-gout .fa-regular {
+  color: black;
+}
+
+.section-body-content {
+  width: 100%;
+}
+.section-body-content .section-title-goût-second {
+  display: flex;
+  flex-direction: column;
+}
+.section-body-content .barre_de_separation {
+  width: 20%;
+  display: flex;
+  border: 3px solid #99E2D0;
+}
+.section-body-content .section-text-euro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+}
+
+.btn-commander {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.btn-commander button {
+  padding: 20px 45px;
+  border: none;
+  border-radius: 25px;
+  color: #F3F3F3;
+  background: linear-gradient(1turn, #9356DC, #FF79DA);
+}
+
+/*FOOTER PARTY */
+footer {
+  width: 100%;
+  background: #353535;
+  color: #F3F3F3;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  margin: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+footer .a_propos p {
+  margin: 10px 20px;
+}
+footer .a_propos .flex {
+  display: flex;
+  align-items: center;
+}
+footer .a_propos .flex i {
+  width: 20px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=paletteDuGout.css.map */
