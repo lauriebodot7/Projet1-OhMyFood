@@ -6,6 +6,7 @@ $main-footer: #353535;
 $main-white: #F3F3F3;
 $grey-primaire: #EAEAEA;
 $color-purple-principal: #9356DC;
+$color-pink-principal: #FF79DA;
 $color-bg-grey-second: #F7F7F7;
 $color-bg-grey-tri: #7E7E7E;
 $color-green-clear: #99E2D0;
@@ -40,6 +41,7 @@ header {
 main {
     .main_container_body {
         width: 100%;
+        padding-bottom: 6%;
         background-color: $grey-primaire;
         & .header_body_reverse {
             width: 100%;
@@ -71,7 +73,7 @@ main {
                 border: none;
                 border-radius: 25px;
                 color: $main-white;
-                background: linear-gradient(1turn, $color-purple-principal, #FF79DA);
+                background: linear-gradient(1turn, $color-purple-principal, $color-pink-principal);
             }
         }
         .header_body_reverse_info_fonctionnement {
@@ -96,10 +98,18 @@ main {
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
+                        i {
+                            color: $color-bg-grey-tri;
+                        }
+                        i:hover {
+                            color: $color-purple-principal;
+                        }
+
                     }
                     .number{
                         width: 20px;
                         height: 20px;
+                        font-size: 12px;
                         border-radius: 25px;
                         position: absolute;
                         display: flex;
@@ -142,24 +152,28 @@ main {
                 .hearts {
                     position: relative;
                     right: -68px;
-                    color: black;
+                    width: 40%;
                     & .likes {
-                        left: -5px;
-                        position: absolute;
-                        :hover {
-                            visibility: hidden;
-                        }
-                    }
-                    .likes-plein {
-                        width: 0;
                         left: 0px;
                         position: absolute;
+                    }
+                    :hover {
                         z-index: 2;
-                        opacity: 0;
+                    }
+                    .likes-plein {
+                        left: 0px;
+                        position: absolute;
+                        -webkit-text-fill-color: transparent;
                         :hover {
-                            opacity: 100%;
+                            background: linear-gradient($color-purple-principal, $color-pink-principal);
+                            -webkit-background-clip: text;
+                            opacity: 1;
+                            z-index: 2;
                         }
                     }
+                }
+                & .txt-img-likes a{
+                    color: black;
                 }
             }
         }
@@ -177,9 +191,18 @@ footer {
     h3 {
         font-family: 'Shrikhand', cursive;
         margin: 20px;
+        font-weight: 500;
         font-size: 18px;
     }
     .a_propos p {
         margin: 10px 20px;
+    }
+    .a_propos .flex {
+        display: flex;
+        align-items: center;
+        i{
+            width: 20px;
+            margin-left: 20px;
+        }
     }
 } 
