@@ -23,7 +23,7 @@
                 <div class="header_body_reverse_info_button">
                     <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    <button>Explorer nos restaurants</button>
+                    <button><a href="#resto-articles">Explorer nos restaurants</a></button>
                 </div>
             </section>
             <section class="header_body_reverse_info_fonctionnement">
@@ -49,59 +49,67 @@
                     </div>
                 </div>
             </section>
-            <section class="restaurant_articles">
+            <section id="resto-articles" class="restaurant_articles">
                 <h2>Restaurants</h2>
-                <article class="restaurant_articles_cards">
-                        <img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                    <article class="restaurant_articles_cards">
+                        <div class="nouveau">
+                            <span class="span-nouveau">Nouveau</span>
+                            <img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        </div>
                         <div class="txt-img">
                             <div class="hearts">
                                 <span class="likes"><a href=""><i class="fa-regular fa-heart"></i></a></span>
                                 <span class="likes-plein"><a href=""><i class="fa-solid fa-heart"></i></a></span>
                             </div>
                             <div class="txt-img-likes">
-                                <a href=""><h3>La palette du goût</h3></a>
+                                <a href="./restaurant/paletteDuGout.html"><h3>La palette du goût</h3></a>
                                 <p>Ménilmontant</p>
                             </div>
                         </div>
-                </article>
+                    </article>
                 <article class="restaurant_articles_cards">
-                    <a href="./">
+                    <div class="nouveau">
+                        <span class="span-nouveau">Nouveau</span>
                         <img src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                        <div class="txt-img">
-                            <div class="hearts">
-                                <span class="likes"><a href=""><i class="fa-regular fa-heart"></i></a></span>
-                                <span class="likes-plein"><a href=""><i class="fa-solid fa-heart"></i></a></span>
-                            </div>
-                            <div class="txt-img-likes">
-                                <a href=""><h3>La palette du goût</h3></a>
-                                <p>Ménilmontant</p>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                <article class="restaurant_articles_cards">
-                    <img src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                    </div>
                     <div class="txt-img">
                         <div class="hearts">
                             <span class="likes"><a href=""><i class="fa-regular fa-heart"></i></a></span>
                             <span class="likes-plein"><a href=""><i class="fa-solid fa-heart"></i></a></span>
                         </div>
                         <div class="txt-img-likes">
-                            <a href=""><h3>La palette du goût</h3></a>
-                            <p>Ménilmontant</p>
+                            <a href="./restaurant/lesDelicesDesSens.html"><h3>La note enchantée</h3></a>
+                            <p>Charonne</p>
                         </div>
                     </div>
                 </article>
                 <article class="restaurant_articles_cards">
-                    <img src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                    <div class="nouveau">
+                        <img src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                    </div>
                     <div class="txt-img">
                         <div class="hearts">
                             <span class="likes"><a href=""><i class="fa-regular fa-heart"></i></a></span>
                             <span class="likes-plein"><a href=""><i class="fa-solid fa-heart"></i></a></span>
                         </div>
                         <div class="txt-img-likes">
-                            <a href=""><h3>La palette du goût</h3></a>
-                            <p>Ménilmontant</p>
+                            <a href=""><h3>A la français</h3></a>
+                            <p>Cité Rouge</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="restaurant_articles_cards">
+                    <div class="nouveau">
+                        <img src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                    </div>
+                    <div class="txt-img">
+                        <div class="hearts">
+                            <span class="likes"><a href=""><i class="fa-regular fa-heart"></i></a></span>
+                            <span class="likes-plein"><a href=""><i class="fa-solid fa-heart"></i></a></span>
+                        </div>
+                        <div class="txt-img-likes">
+                            <a href=""><h3>Le délices sens</h3></a>
+                            <p>Folie-Méricourti</p>
                         </div>
                     </div>
                 </article>
@@ -113,13 +121,17 @@
         <h3>ohmyfood</h3>
         <div class="a_propos">
             <div class="flex">
-                <i class="fa-solid fa-utensils"></i><p>Proposer un restaurant</p>
+                <a href="#">
+                    <i class="fa-solid fa-utensils"></i><p>Proposer un restaurant</p>
+                </a>
             </div>
             <div class="flex">
-            <i class="fa-solid fa-handshake-angle"></i><p>Devenir partenaire</p>
+                <a href="#">
+                    <i class="fa-solid fa-handshake-angle"></i><p>Devenir partenaire</p>
+                </a>
             </div>
-            <p>Mentoins légales</p>
-            <p>Contact</p>
+            <a href="#"><p>Mentions légales</p></a>
+            <a href="#"><p>Contact</p></a>
         </div>
     </footer>
 
