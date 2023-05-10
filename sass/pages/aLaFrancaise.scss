@@ -20,7 +20,6 @@ $color-blue-dark: #003A68;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* MAIN PARTY */
@@ -101,12 +100,9 @@ main img {
 }
 .section-body-content {
     width: 100%;
-    & .section-title-goût {
+    .section-title-goût-second {
         display: flex;
         flex-direction: column;
-        h3 {
-            font-weight: 100;
-        }
     }
     & .barre_de_separation {
         width: 20%;
@@ -136,11 +132,7 @@ main img {
         color: $main-white;
         box-shadow: 0px 0px 8px grey;
         background: linear-gradient(1turn, $color-purple-principal, $color-pink-principal);
-        &:hover {
-            background: linear-gradient(1turn, #9e66e4, #fd8ede);
-        }
     }
-    
 }
 
 /*FOOTER PARTY */

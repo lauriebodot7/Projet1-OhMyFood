@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 /* MAIN PARTY */
@@ -89,12 +88,9 @@ main img {
 .section-body-content {
   width: 100%;
 }
-.section-body-content .section-title-goût {
+.section-body-content .section-title-goût-second {
   display: flex;
   flex-direction: column;
-}
-.section-body-content .section-title-goût h3 {
-  font-weight: 100;
 }
 .section-body-content .barre_de_separation {
   width: 20%;
@@ -126,9 +122,6 @@ main img {
   box-shadow: 0px 0px 8px grey;
   background: linear-gradient(1turn, #9356DC, #FF79DA);
 }
-.btn-commander button:hover {
-  background: linear-gradient(1turn, #9e66e4, #fd8ede);
-}
 
 /*FOOTER PARTY */
 footer {
@@ -159,4 +152,4 @@ footer .a_propos .flex i {
   margin-left: 20px;
 }
 
-/*# sourceMappingURL=paletteDuGout.css.map */
+/*# sourceMappingURL=aLafrancaise.css.map */
