@@ -34,8 +34,8 @@ header {
         background-color: white;
         width: 90%;
         & .arrow-left {
-            font-size: xx-large;
-            color: black;
+            font-size: x-large;
+            color: $main-footer;
         }
         & img {
             width: 50%;
@@ -64,6 +64,7 @@ main img {
             font-family: 'Shrikhand';
             font-size: 28px;
             font-style: italic;
+            font-weight: 400;
         }
         .hearts {
             position: relative;
@@ -120,7 +121,7 @@ main img {
         padding: 10px;
         margin: 20px 0;
         border-radius: 10px;
-        box-shadow: 0px 0px 8px grey;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
     }
 }
@@ -130,11 +131,12 @@ main img {
     justify-content: space-evenly;
     align-items: center;
     & button {
+        font-weight: 500;
         padding: 20px 45px;
         border: none;
         border-radius: 25px;
         color: $main-white;
-        box-shadow: 0px 0px 8px grey;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background: linear-gradient(1turn, $color-purple-principal, $color-pink-principal);
         &:hover {
             background: linear-gradient(1turn, #9e66e4, #fd8ede);

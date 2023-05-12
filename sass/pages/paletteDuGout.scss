@@ -121,7 +121,7 @@ main img {
         padding: 10px;
         margin: 20px 0;
         border-radius: 10px;
-        box-shadow: 0px 0px 8px grey;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
     }
 }
@@ -131,6 +131,7 @@ main img {
     justify-content: space-evenly;
     align-items: center;
     & button {
+        font-weight: 500;
         padding: 20px 45px;
         border: none;
         border-radius: 25px;
