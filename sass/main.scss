@@ -214,20 +214,19 @@ footer {
         font-weight: 500;
         font-size: 18px;
     }
-    .a_propos  {
-        color: white;
-        & i, p{
-            margin: 10px;
-            color: white;
-            text-decoration: none;
-        } 
-    }
-    .a_propos .flex a{
-        display: flex;
-        align-items: center;
+    .flex {
         i{
             width: 20px;
             margin-left: 20px;
+        }
+    }
+    .a_propos a {
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        p {
+            margin: 8px;
         }
     }
 } 

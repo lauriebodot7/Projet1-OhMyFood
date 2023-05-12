@@ -143,11 +143,14 @@ footer h3 {
 footer .a_propos p {
   margin: 8px 15px;
 }
-footer .a_propos .flex {
+footer .a_propos a {
+  text-decoration: none;
+}
+footer .flex {
   display: flex;
   align-items: center;
 }
-footer .a_propos .flex i {
+footer .flex i {
   width: 20px;
   margin-left: 20px;
 }

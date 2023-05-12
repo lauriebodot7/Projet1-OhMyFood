@@ -151,25 +151,25 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    z-index: 1;
-    position: absolute;
     h3 {
         font-family: 'Shrikhand', cursive;
         margin: 20px;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 18px;
     }
-    & .a_propos {
-        p {
-            margin: 8px 15px;
-        }
-    }
-    .a_propos .flex {
-        display: flex;
-        align-items: center;
+    .flex {
         i{
             width: 20px;
             margin-left: 20px;
+        }
+    }
+    .a_propos a {
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        p {
+            margin: 8px;
         }
     }
 } 

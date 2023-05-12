@@ -194,21 +194,18 @@ footer h3 {
   font-weight: 500;
   font-size: 18px;
 }
-footer .a_propos {
-  color: white;
-}
-footer .a_propos i, footer .a_propos p {
-  margin: 10px;
-  color: white;
-  text-decoration: none;
-}
-footer .a_propos .flex a {
-  display: flex;
-  align-items: center;
-}
-footer .a_propos .flex a i {
+footer .flex i {
   width: 20px;
   margin-left: 20px;
+}
+footer .a_propos a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}
+footer .a_propos a p {
+  margin: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
