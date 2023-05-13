@@ -12,20 +12,24 @@ header {
   width: 100%;
 }
 header nav {
-  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
 }
 header nav img {
-  width: 50%;
+  width: 30%;
+  margin: 20px;
+}
+@media (min-width: 1080px) and (max-width: 1920px) {
+  header nav img {
+    width: 10%;
+  }
 }
 
 /* MAIN BODY CONTAINER PARTY */
 main .main_container_body {
   width: 100%;
-  padding-bottom: 6%;
   background-color: #EAEAEA;
 }
 main .main_container_body .header_body_reverse {
@@ -54,6 +58,16 @@ main .main_container_body .header_body_reverse_info_button {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_button h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_button p {
+    font-size: 18px;
+  }
+}
 main .main_container_body .header_body_reverse_info_button button {
   padding: 20px;
   border: none;
@@ -66,6 +80,12 @@ main .main_container_body .header_body_reverse_info_button button a {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_button button a {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
 main .main_container_body .header_body_reverse_info_button button:hover {
   background: linear-gradient(1turn, #9e66e4, #fd8ede);
 }
@@ -74,11 +94,27 @@ main .main_container_body .header_body_reverse_info_fonctionnement {
   width: 100%;
   padding: 20px;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_fonctionnement .title-fonc {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  main .main_container_body .header_body_reverse_info_fonctionnement .title-fonc h2 {
+    width: 25%;
+  }
+}
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button {
   height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button {
+    flex-direction: row;
+    height: 17vh;
+  }
 }
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button {
   display: flex;
@@ -95,12 +131,27 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button {
+    padding: 25px 60px;
+  }
+}
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button i {
   font-size: 18px;
   color: #7E7E7E;
 }
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button i:hover {
   color: #9356DC;
+}
+main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button a {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button .number {
   width: 20px;
@@ -115,8 +166,24 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   color: #F3F3F3;
   background-color: #9356DC;
 }
-main .main_container_body .restaurant_articles h2 {
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button .number-span {
+    left: 8px;
+    position: relative;
+  }
+}
+main .main_container_body .restaurant_articles .title-fonc h2 {
   padding: 30px 20px 0px 20px;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .title-fonc h2 {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  main .main_container_body .restaurant_articles .title-fonc h2 h2 {
+    width: 30%;
+  }
 }
 main .main_container_body .restaurant_articles .restaurant_articles_cards {
   margin: 30px 25px;
@@ -124,6 +191,16 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards {
   border-radius: 15px;
   overflow: hidden;
   height: 28vh;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .restaurant_articles_cards {
+    width: 35%;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .restaurant_articles_cards .nouveau {
+    width: 100%;
+  }
 }
 main .main_container_body .restaurant_articles .restaurant_articles_cards .nouveau img {
   width: 100%;
@@ -136,6 +213,27 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards .span-
   right: 40px;
   position: absolute;
   background-color: #99E2D0;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .restaurant_articles_cards .span-nouveau {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .restaurant_articles_cards .respo-nouveau {
+    position: absolute;
+    margin: 20px;
+    width: 35%;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .les_articles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
 }
 main .main_container_body .restaurant_articles .txt-img {
   width: 100%;
@@ -159,6 +257,11 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes {
   left: 0px;
   position: absolute;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .txt-img .hearts .likes {
+    left: 115px;
+  }
+}
 main .main_container_body .restaurant_articles .txt-img .hearts :hover {
   z-index: 2;
 }
@@ -168,6 +271,11 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
   position: absolute;
   font-size: 23px;
   -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
+    left: 115px;
+  }
 }
 main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein :hover {
   background: linear-gradient(#9356DC, #FF79DA);
@@ -188,23 +296,42 @@ footer {
   justify-content: space-evenly;
   flex-direction: column;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  footer {
+    height: 12vh;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
 footer h3 {
   font-family: "Shrikhand", cursive;
   margin: 20px;
   font-weight: 500;
   font-size: 18px;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  footer h3 {
+    display: flex;
+    align-items: center;
+  }
+}
 footer .flex i {
   width: 20px;
   margin-left: 20px;
 }
-footer .a_propos a {
+@media (max-width: 1920px) and (min-width: 1080px) {
+  footer .a_propos {
+    display: flex;
+    align-items: center;
+  }
+}
+footer a {
   color: white;
   text-decoration: none;
   align-items: center;
   display: flex;
 }
-footer .a_propos a p {
+footer a p {
   margin: 8px;
 }
 

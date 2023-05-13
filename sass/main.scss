@@ -27,13 +27,16 @@ $color-blue-dark: #003A68;
 header {
     width: 100%;
     & nav {
-        height: 7vh;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: white;
         & img {
-            width: 50%;
+            width: 30%;
+            margin: 20px;
+            @media (min-width: 1080px) and (max-width: 1920px){
+                width: 10%;
+            }
         }
     }
 }
@@ -42,7 +45,6 @@ header {
 main {
     .main_container_body {
         width: 100%;
-        padding-bottom: 6%;
         background-color: $grey-primaire;
         & .header_body_reverse {
             width: 100%;
@@ -69,6 +71,16 @@ main {
             justify-content: space-evenly;
             flex-direction: column;
             align-items: center;
+            h1 {
+                @media (max-width: 1920px) and (min-width: 1080px) {
+                    font-size: 40px;
+                }
+            }
+            & p {
+                @media (max-width: 1920px) and (min-width: 1080px) {
+                    font-size: 18px;
+                }
+            }
             & button {
                 padding: 20px;
                 border: none;
@@ -79,21 +91,41 @@ main {
                 & a {
                     text-decoration: none;
                     color: white;
+                    @media (max-width: 1920px) and (min-width: 1080px) {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
                 }
                 &:hover {
                     background: linear-gradient(1turn, #9e66e4, #fd8ede);
                 }
             }
         }
+
         .header_body_reverse_info_fonctionnement {
             background-color: white;
             width: 100%;
             padding: 20px;
+            .title-fonc {
+                @media (max-width: 1920px) and (min-width: 1080px) {
+                    width: 35%;
+                    display: flex;
+                    justify-content: center;
+                    h2 {
+                        width: 25%;
+                    }
+                }
+            }
+            
             .header_body_reverse_info_fonctionnement_button {
                 height: 25vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
+                    @media (max-width: 1920px) and (min-width: 1080px) {
+                        flex-direction: row;
+                        height: 17vh;
+                    }
                 .choix_button {
                     display: flex;
                     align-items: center;
@@ -107,6 +139,9 @@ main {
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
+                        @media (max-width: 1920px) and (min-width: 1080px) {
+                            padding: 25px 60px;
+                        }
                         i {
                             font-size: 18px;
                             color: $color-bg-grey-tri;
@@ -114,9 +149,16 @@ main {
                         i:hover {
                             color: $color-purple-principal;
                         }
-
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            @media (max-width: 1920px) and (min-width: 1080px) {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
                     }
-                    .number{
+                    .number {
                         width: 20px;
                         height: 20px;
                         font-size: 12px;
@@ -129,12 +171,27 @@ main {
                         color: $main-white;
                         background-color: $color-purple-principal;
                     }
+                    .number-span {
+                        @media (max-width: 1920px) and (min-width: 1080px) {
+                            left: 8px;
+                            position: relative;
+                        }
+                    }
                 }
             }
         }
+
         .restaurant_articles {
-            & h2 {
+            .title-fonc h2 {
                 padding: 30px 20px 0px 20px;
+                @media (max-width: 1920px) and (min-width: 1080px) {
+                    width: 35%;
+                    display: flex;
+                    justify-content: center;
+                    h2 {
+                        width: 30%;
+                    }
+                }
             }
             .restaurant_articles_cards {
                 margin: 30px 25px;
@@ -142,17 +199,46 @@ main {
                 border-radius: 15px;
                 overflow: hidden;
                 height: 28vh;
-                & .nouveau img {
-                    width: 100%;
-                    height: 19vh;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0 0;
+                @media (max-width: 1920px) and (min-width: 1080px) {
+                    width: 35%;
                 }
+                & .nouveau {
+                    @media (max-width: 1920px) and (min-width: 1080px) {
+                        width: 100%;
+                    }
+                    img {
+                        width: 100%;
+                        height: 19vh;
+                        object-fit: cover;
+                        border-radius: 20px 20px 0 0;
+                    }
+                }
+                
+                
                 & .span-nouveau {
                     padding: 10px;
                     right: 40px;
                     position: absolute;
                     background-color: $color-bleu-green;
+                    @media (max-width: 1920px) and (min-width: 1080px) {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+                .respo-nouveau {
+                    @media (max-width: 1920px) and (min-width: 1080px) {
+                        position: absolute;
+                        margin: 20px;
+                        width: 35%;
+                    }
+                }
+            }
+            & .les_articles {
+                @media (max-width: 1920px) and (min-width: 1080px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: center;
                 }
             }
             & .txt-img {
@@ -169,11 +255,14 @@ main {
                     position: relative;
                     right: -68px;
                     width: 40%;
-                    & .likes {
+                    .likes {
                         top: -12px;
                         font-size: 23px;
                         left: 0px;
                         position: absolute;
+                        @media (max-width: 1920px) and (min-width: 1080px) {
+                            left: 115px;
+                        }
                     }
                     :hover {
                         z-index: 2;
@@ -184,6 +273,9 @@ main {
                         position: absolute;
                         font-size: 23px;
                         -webkit-text-fill-color: transparent;
+                        @media (max-width: 1920px) and (min-width: 1080px) {
+                            left: 115px;
+                        }
                         :hover {
                             background: linear-gradient($color-purple-principal, $color-pink-principal);
                             -webkit-background-clip: text;
@@ -208,11 +300,20 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    @media (max-width: 1920px) and (min-width: 1080px) {
+        height: 12vh;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
     h3 {
         font-family: 'Shrikhand', cursive;
         margin: 20px;
         font-weight: 500;
         font-size: 18px;
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+        }
     }
     .flex {
         i{
@@ -220,7 +321,14 @@ footer {
             margin-left: 20px;
         }
     }
-    .a_propos a {
+    .a_propos {
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    & a {
         color: white;
         text-decoration: none;
         align-items: center;
