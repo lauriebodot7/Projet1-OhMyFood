@@ -87,7 +87,7 @@ main {
         }
         .hearts {
             position: relative;
-            right: -50px;
+            right: -20px;
             @media (max-width: 1920px) and (min-width: 1080px) {
                 left: 420px;
             }
@@ -146,28 +146,27 @@ main {
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
         .card {
-            width: 85%;
+            width: 240px;
             padding: 10px;
-            p {
+            h4, p {
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
             }
         }
         .mar-p {
-            margin-right: 20px;
+            margin-right: 10px;
             display: flex;
         }
         &:hover {
             .tcheck {
-                    width: 15%;
+                    width: 40px;
                     height: 6vh;
                     background-color: aquamarine;
                     border-radius: 0 10px 10px 0;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    position: relative;
                 :hover {
                     width: 15%;
                     height: 5vh;

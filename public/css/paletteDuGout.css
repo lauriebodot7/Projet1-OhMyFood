@@ -75,7 +75,7 @@ main .container-body-content {
 }
 .section-gout .section-title-goût-principal .hearts {
   position: relative;
-  right: -50px;
+  right: -20px;
 }
 @media (max-width: 1920px) and (min-width: 1080px) {
   .section-gout .section-title-goût-principal .hearts {
@@ -137,27 +137,26 @@ main .container-body-content {
   background-color: #F7F7F7;
 }
 .section-body-content .section-text-euro .card {
-  width: 85%;
+  width: 240px;
   padding: 10px;
 }
-.section-body-content .section-text-euro .card p {
+.section-body-content .section-text-euro .card h4, .section-body-content .section-text-euro .card p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .section-body-content .section-text-euro .mar-p {
-  margin-right: 20px;
+  margin-right: 10px;
   display: flex;
 }
 .section-body-content .section-text-euro:hover .tcheck {
-  width: 15%;
+  width: 40px;
   height: 6vh;
   background-color: aquamarine;
   border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .section-body-content .section-text-euro:hover .tcheck :hover {
   width: 15%;
