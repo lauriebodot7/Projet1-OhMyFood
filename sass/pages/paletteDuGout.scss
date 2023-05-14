@@ -32,29 +32,48 @@ header {
         align-items: center;
         justify-content: space-evenly;
         background-color: white;
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            justify-content: space-between;
+            width: 55%;
+        }
         width: 90%;
         & .arrow-left {
             font-size: x-large;
             color: $main-footer;
         }
         & img {
-            width: 50%;
+            width: 150px;
         }
     }
 }
 
-main img {
-    width: 100%;
-    position: absolute;
+main {
+    & img {
+        width: 100%;
+        position: absolute;
+        height: 45%;
+        object-fit: cover;
+    }
+    .container-body-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
+
+
 .section-gout {
+    width: 100%;
     position: relative;
     background: $grey-primaire;
     padding: 20px;
     border-radius: 20px 20px 0 0;
     top: 195px;
     margin-bottom: 200px;
+    @media (max-width: 1920px) and (min-width: 1080px) {
+        width: 50%;
+    }
     .section-title-goût-principal {
         display: flex;
         align-items: center;
@@ -69,6 +88,9 @@ main img {
         .hearts {
             position: relative;
             right: -50px;
+            @media (max-width: 1920px) and (min-width: 1080px) {
+                left: 420px;
+            }
             & .likes {
                 top: -12px;
                 font-size: 23px;
@@ -118,11 +140,52 @@ main img {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px;
         margin: 20px 0;
         border-radius: 10px;
+        width: 100%;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
+        .card {
+            width: 85%;
+            padding: 10px;
+            p {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        .mar-p {
+            margin-right: 20px;
+            display: flex;
+        }
+        &:hover {
+            .tcheck {
+                    width: 15%;
+                    height: 6vh;
+                    background-color: aquamarine;
+                    border-radius: 0 10px 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                :hover {
+                    width: 15%;
+                    height: 5vh;
+                    right: 50px;
+                    background-color: aquamarine;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & i {
+                    display: flex;
+                    color: white;
+                }
+            }
+        }
+        & i {
+            display: none;
+        }
     }
 }
 .btn-commander {

@@ -21,26 +21,45 @@ header nav {
   background-color: white;
   width: 90%;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  header nav {
+    justify-content: space-between;
+    width: 55%;
+  }
+}
 header nav .arrow-left {
   font-size: x-large;
   color: #353535;
 }
 header nav img {
-  width: 50%;
+  width: 150px;
 }
 
 main img {
   width: 100%;
   position: absolute;
+  height: 45%;
+  object-fit: cover;
+}
+main .container-body-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section-gout {
+  width: 100%;
   position: relative;
   background: #EAEAEA;
   padding: 20px;
   border-radius: 20px 20px 0 0;
   top: 195px;
   margin-bottom: 200px;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-gout {
+    width: 50%;
+  }
 }
 .section-gout .section-title-goût-principal {
   display: flex;
@@ -57,6 +76,11 @@ main img {
 .section-gout .section-title-goût-principal .hearts {
   position: relative;
   right: -50px;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-gout .section-title-goût-principal .hearts {
+    left: 420px;
+  }
 }
 .section-gout .section-title-goût-principal .hearts .likes {
   top: -12px;
@@ -106,11 +130,50 @@ main img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
   margin: 20px 0;
   border-radius: 10px;
+  width: 100%;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   background-color: #F7F7F7;
+}
+.section-body-content .section-text-euro .card {
+  width: 85%;
+  padding: 10px;
+}
+.section-body-content .section-text-euro .card p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section-body-content .section-text-euro .mar-p {
+  margin-right: 20px;
+  display: flex;
+}
+.section-body-content .section-text-euro:hover .tcheck {
+  width: 15%;
+  height: 6vh;
+  background-color: aquamarine;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section-body-content .section-text-euro:hover .tcheck :hover {
+  width: 15%;
+  height: 5vh;
+  right: 50px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-body-content .section-text-euro:hover .tcheck i {
+  display: flex;
+  color: white;
+}
+.section-body-content .section-text-euro i {
+  display: none;
 }
 
 .btn-commander {

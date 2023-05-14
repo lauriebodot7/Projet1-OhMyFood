@@ -40,6 +40,7 @@ header {
 
 /* MAIN BODY CONTAINER PARTY */
 main {
+    background-color: $main-body;
     .main_container_body {
         width: 100%;
         background-color: $grey-primaire;
@@ -62,7 +63,7 @@ main {
         }
         .header_body_reverse_info_button {
             width: 85%;
-            height: 23vh;
+            height: 25vh;
             text-align: center;
             display: flex;
             justify-content: space-evenly;
@@ -105,7 +106,7 @@ main {
             padding: 20px;
             .title-fonc {
                 @media (max-width: 1920px) and (min-width: 1080px) {
-                    width: 35%;
+                    width: 20%;
                     display: flex;
                     justify-content: center;
                     h2 {
@@ -115,7 +116,8 @@ main {
             }
             
             .header_body_reverse_info_fonctionnement_button {
-                height: 25vh;
+                height: 30vh;
+                margin: 0 30px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -124,6 +126,7 @@ main {
                         height: 17vh;
                     }
                 .choix_button {
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     & button {
@@ -133,9 +136,6 @@ main {
                         box-shadow: 0 4px 15px -3px $color-bg-grey-tri;
                         background-color: white;
                         padding: 20px 45px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-around;
                         @media (max-width: 1920px) and (min-width: 1080px) {
                             padding: 25px 60px;
                         }
@@ -147,13 +147,16 @@ main {
                             color: $color-purple-principal;
                         }
                         a {
-                            width: 100%;
                             text-decoration: none;
                             color: black;
                             font-weight: 500;
                             font-size: 16px;
                             display: flex;
-                            justify-content: space-evenly;
+                            
+                            justify-content: center;
+                            p {
+                                margin: 0 15px;
+                            }
                         }
                     }
                     .number {
@@ -165,7 +168,7 @@ main {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        left: 17px;
+                        left: 40px;
                         color: $main-white;
                         background-color: $color-purple-principal;
                     }
@@ -180,10 +183,11 @@ main {
         }
 
         .restaurant_articles {
+            padding: 20px 0;
             .title-fonc h2 {
                 padding: 30px 20px 0px 20px;
                 @media (max-width: 1920px) and (min-width: 1080px) {
-                    width: 35%;
+                    width: 25%;
                     display: flex;
                     justify-content: center;
                     h2 {
@@ -192,11 +196,11 @@ main {
                 }
             }
             .restaurant_articles_cards {
-                margin: 30px 25px;
                 box-shadow: 0 4px 15px -3px grey;
                 border-radius: 15px;
                 overflow: hidden;
                 height: 28vh;
+                margin: 30px 0;
                 @media (max-width: 1920px) and (min-width: 1080px) {
                     width: 35%;
                 }
@@ -230,6 +234,8 @@ main {
                 }
             }
             & .les_articles {
+                width: 80%;
+                margin: 20px 40px;
                 @media (max-width: 1920px) and (min-width: 1080px) {
                     display: flex;
                     flex-wrap: wrap;
@@ -324,8 +330,13 @@ footer {
             margin-left: 20px;
         }
     }
-    .info-contact a p{
-        margin: 8px 20px;
+    .info-contact{
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+        }
+        a p{
+            margin: 8px 20px;
+        }
     }
     & a {
         color: white;
