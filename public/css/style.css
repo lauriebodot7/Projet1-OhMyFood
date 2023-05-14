@@ -18,13 +18,8 @@ header nav {
   background-color: white;
 }
 header nav img {
-  width: 30%;
+  width: 150px;
   margin: 20px;
-}
-@media (min-width: 1080px) and (max-width: 1920px) {
-  header nav img {
-    width: 10%;
-  }
 }
 
 /* MAIN BODY CONTAINER PARTY */
@@ -58,15 +53,17 @@ main .main_container_body .header_body_reverse_info_button {
   flex-direction: column;
   align-items: center;
 }
+main .main_container_body .header_body_reverse_info_button h1 {
+  font-size: 24px;
+  width: 80%;
+}
 @media (max-width: 1920px) and (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_button h1 {
     font-size: 40px;
   }
 }
-@media (max-width: 1920px) and (min-width: 1080px) {
-  main .main_container_body .header_body_reverse_info_button p {
-    font-size: 18px;
-  }
+main .main_container_body .header_body_reverse_info_button p {
+  font-size: 18px;
 }
 main .main_container_body .header_body_reverse_info_button button {
   padding: 20px;
@@ -126,7 +123,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   border-radius: 20px;
   box-shadow: 0 4px 15px -3px #7E7E7E;
   background-color: white;
-  padding: 20px;
+  padding: 20px 45px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -144,14 +141,13 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   color: #9356DC;
 }
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button a {
+  width: 100%;
   text-decoration: none;
   color: black;
-}
-@media (max-width: 1920px) and (min-width: 1080px) {
-  main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button a {
-    font-size: 16px;
-    font-weight: 500;
-  }
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-evenly;
 }
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button .number {
   width: 20px;
@@ -315,15 +311,18 @@ footer h3 {
     align-items: center;
   }
 }
-footer .flex i {
-  width: 20px;
-  margin-left: 20px;
-}
 @media (max-width: 1920px) and (min-width: 1080px) {
   footer .a_propos {
     display: flex;
     align-items: center;
   }
+}
+footer .flex i {
+  width: 20px;
+  margin-left: 20px;
+}
+footer .info-contact a p {
+  margin: 8px 20px;
 }
 footer a {
   color: white;
