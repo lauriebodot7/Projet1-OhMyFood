@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   .animate-loader-base .animaTion-contenu-main-loader {
     width: 10%;
   }
@@ -78,7 +78,7 @@
   }
 }
 .animate--slow {
-  animation-duration: 5s;
+  animation-duration: 2s;
 }
 
 .animaTion-contenu-main {
@@ -151,7 +151,7 @@ main .main_container_body .header_body_reverse_info_button h1 {
   font-size: 24px;
   width: 80%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_button h1 {
     font-size: 40px;
   }
@@ -171,7 +171,7 @@ main .main_container_body .header_body_reverse_info_button button a {
   text-decoration: none;
   color: white;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_button button a {
     font-size: 16px;
     font-weight: 500;
@@ -185,14 +185,14 @@ main .main_container_body .header_body_reverse_info_fonctionnement {
   width: 100%;
   padding: 30px 35px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .title-fonc {
     width: 78%;
     display: flex;
@@ -204,7 +204,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button {
     flex-direction: row;
     height: 17vh;
@@ -216,7 +216,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   display: flex;
   align-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button {
     width: 30%;
   }
@@ -229,7 +229,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   background-color: white;
   padding: 20px 25px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button button {
     padding: 25px 0px;
   }
@@ -265,7 +265,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   color: #F3F3F3;
   background-color: #9356DC;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button .number-span {
     left: 8px;
     position: relative;
@@ -274,14 +274,14 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
 main .main_container_body .restaurant_articles {
   padding: 20px 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .title-fonc {
     width: 100%;
   }
@@ -289,7 +289,7 @@ main .main_container_body .restaurant_articles {
 main .main_container_body .restaurant_articles .title-fonc h2 {
   padding: 0px 20px 0px 40px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .title-fonc h2 {
     width: 31%;
     display: flex;
@@ -304,13 +304,13 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards {
   margin: 24px 0;
   width: 100%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .restaurant_articles_cards {
     width: 47%;
     margin: 24px 0;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .restaurant_articles_cards .nouveau {
     width: 100%;
   }
@@ -327,18 +327,18 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards .span-
   position: absolute;
   background-color: #99E2D0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .restaurant_articles_cards .span-nouveau {
     display: flex;
     justify-content: flex-end;
   }
 }
-@media (max-width: 1024px) and (min-width: 720px) {
+@media (max-width: 1079px) and (min-width: 720px) {
   main .main_container_body .restaurant_articles .restaurant_articles_cards .span-nouveau {
     right: 88px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .restaurant_articles_cards .respo-nouveau {
     position: absolute;
     margin: 20px;
@@ -349,7 +349,7 @@ main .main_container_body .restaurant_articles .les_articles {
   width: 90%;
   margin: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .les_articles {
     display: flex;
     width: 80%;
@@ -359,7 +359,7 @@ main .main_container_body .restaurant_articles .les_articles {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 1024px) and (min-width: 720px) {
+@media (max-width: 1079px) and (min-width: 720px) {
   main .main_container_body .restaurant_articles .les_articles {
     margin: 30px;
   }
@@ -380,12 +380,12 @@ main .main_container_body .restaurant_articles .txt-img .hearts {
   right: -68px;
   width: 40%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .txt-img .hearts {
     right: 5px;
   }
 }
-@media (max-width: 1023px) and (min-width: 720px) {
+@media (max-width: 1079px) and (min-width: 720px) {
   main .main_container_body .restaurant_articles .txt-img .hearts {
     right: -178px;
   }
@@ -396,7 +396,7 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes {
   left: 0px;
   position: absolute;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .txt-img .hearts .likes {
     left: 115px;
   }
@@ -411,7 +411,7 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
   font-size: 23px;
   -webkit-text-fill-color: transparent;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
     left: 115px;
   }
@@ -435,7 +435,7 @@ footer {
   justify-content: space-evenly;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   footer {
     height: 12vh;
     flex-direction: row-reverse;
@@ -448,14 +448,14 @@ footer h3 {
   font-weight: 500;
   font-size: 18px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   footer h3 {
     display: flex;
     align-items: center;
     margin-right: 100px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   footer .a_propos {
     display: flex;
     align-items: center;
@@ -465,7 +465,7 @@ footer .flex i {
   width: 20px;
   margin-left: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   footer .info-contact {
     display: flex;
   }
