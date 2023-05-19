@@ -23,6 +23,98 @@ $color-blue-dark: #003A68;
     font-family: 'Roboto', sans-serif;
 }
 
+/* LOADER PAGE INDEX */
+@media (max-width: 1920px) and (min-width: 1080px) {
+    .animate-loader-base {
+        width: 100%;
+        height: 60vh;
+        animation-name: animate-loader-base;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .animaTion-contenu-main-loader {
+            width: 15%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .span-loader {
+                font-size: 67px;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                color: $main-footer;
+                border: 3px solid $main-footer;
+                background: linear-gradient(1turn, $color-purple-principal, $color-pink-principal, $color-green-clear);
+                animation-name: animate-flow-color;
+                animation-timing-function: ease-in;
+                animation-duration: 6s;
+            }
+        }
+        .text-loader {
+            text-align: center;
+        }
+    }
+}
+@keyframes animate-flow-color {
+    0% {
+        opacity: 0;
+        transform: rotate(-360deg);
+        background: linear-gradient($color-blue-dark, $color-pink-principal, $color-purple-principal, $color-green-clear);
+    }
+    25% {
+        opacity: 0.25;
+        background: linear-gradient($color-pink-principal,$color-blue-clear, $color-green-clear, $color-purple-principal);
+    }
+    50% {
+        opacity: 0.50;
+        background: linear-gradient($color-green-clear, $color-pink-principal, $color-purple-principal, $color-bg-grey-tri);
+    }
+    75% {
+        opacity: 0.75;
+        background: linear-gradient($color-pink-principal,$color-blue-clear, $color-green-clear, $color-purple-principal);
+    }
+    100% {
+        opacity: 1;
+        background: linear-gradient($color-green-clear, $color-pink-principal, $color-purple-principal, $color-bg-grey-tri);
+    }
+}
+
+@keyframes animaTion-contenu-main {
+    0% {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate--slow {
+    animation-duration: 8s;
+}
+
+.animaTion-contenu-main {
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    /*animation: animaTion-contenu-main 10s ease-in 0s 1 normal none;*/
+    animation-name: animaTion-contenu-main;
+    /*animation-duration: 10s;*/
+    animation-timing-function: ease-in;
+    /*animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;*/
+    transform: translateX(0);
+}
+
+
+
 /*HEADER PARTY */
 header {
     width: 100%;
@@ -106,12 +198,9 @@ main {
             padding: 30px 35px;
             .title-fonc {
                 @media (max-width: 1920px) and (min-width: 1080px) {
-                    width: 20%;
+                    width: 31%;
                     display: flex;
                     justify-content: center;
-                    h2 {
-                        width: 25%;
-                    }
                 }
             }
             
@@ -123,14 +212,14 @@ main {
                     @media (max-width: 1920px) and (min-width: 1080px) {
                         flex-direction: row;
                         height: 17vh;
-                        width: 90%;
+                        width: 95%;
                     }
                 .choix_button {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     @media (max-width: 1920px) and (min-width: 1080px) {
-                        width: 25%;
+                        width: 20%;
                     }
                     & button {
                         width: 100%;
@@ -140,7 +229,7 @@ main {
                         background-color: white;
                         padding: 20px 25px;
                         @media (max-width: 1920px) and (min-width: 1080px) {
-                            padding: 25px 60px;
+                            padding: 25px 0px;
                         }
                         i {
                             font-size: 18px;
@@ -189,12 +278,9 @@ main {
             .title-fonc h2 {
                 padding: 0px 20px 0px 40px;
                 @media (max-width: 1920px) and (min-width: 1080px) {
-                    width: 25%;
+                    width: 31%;
                     display: flex;
                     justify-content: center;
-                    h2 {
-                        width: 30%;
-                    }
                 }
             }
             .restaurant_articles_cards {
@@ -204,7 +290,8 @@ main {
                 height: 28vh;
                 margin: 24px 0;
                 @media (max-width: 1920px) and (min-width: 1080px) {
-                    width: 40%;
+                    width: 47%;
+                    margin: 24px 0;
                 }
                 & .nouveau {
                     @media (max-width: 1920px) and (min-width: 1080px) {
@@ -241,7 +328,9 @@ main {
                 @media (max-width: 1920px) and (min-width: 1080px) {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
+                    margin: 20px 236px;
+                    width: 76%;
                 }
             }
             & .txt-img {
@@ -316,6 +405,7 @@ footer {
         @media (max-width: 1920px) and (min-width: 1080px) {
             display: flex;
             align-items: center;
+            margin-right: 100px;
         }
     }
     

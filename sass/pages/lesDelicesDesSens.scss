@@ -32,34 +32,62 @@ header {
         align-items: center;
         justify-content: space-evenly;
         background-color: white;
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            justify-content: space-between;
+            width: 55%;
+            padding: 20px;
+        }
         width: 90%;
         & .arrow-left {
             font-size: x-large;
             color: $main-footer;
         }
         & img {
-            width: 50%;
+            width: 150px;
         }
     }
 }
 
-main img {
-    width: 100%;
-    position: absolute;
+main {
+    @media (max-width: 1920px) and (min-width: 1080px) {
+        padding-bottom: 159px;
+    }
+    & img {
+        width: 100%;
+        position: absolute;
+        height: 45%;
+        object-fit: cover;
+    }
+    .container-body-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
+
+
 .section-gout {
+    width: 100%;
     position: relative;
     background: $grey-primaire;
     padding: 20px;
     border-radius: 20px 20px 0 0;
     top: 195px;
     margin-bottom: 200px;
+    @media (max-width: 1920px) and (min-width: 1080px) {
+        width: 50%;
+        top: 358px;
+        padding: 65px 130px;    
+    }
     .section-title-goût-principal {
         display: flex;
         align-items: center;
         width: 33vh;
         margin: 0 0px 20px 0;
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            margin-left: 140px;
+        }
         h1 {
             font-family: 'Shrikhand';
             font-size: 28px;
@@ -68,7 +96,10 @@ main img {
         }
         .hearts {
             position: relative;
-            right: -50px;
+            right: -20px;
+            @media (max-width: 1920px) and (min-width: 1080px) {
+                left: 23px;
+            }
             & .likes {
                 top: -12px;
                 font-size: 23px;
@@ -118,11 +149,54 @@ main img {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px;
         margin: 20px 0;
         border-radius: 10px;
+        width: 100%;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
+        .card {
+            width: 240px;
+            padding: 10px;
+            @media (max-width: 1920px) and (min-width: 1080px) {
+                width: 100%;
+            }
+            h4, p {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        .mar-p {
+            margin-right: 10px;
+            display: flex;
+        }
+        &:hover {
+            .tcheck {
+                    width: 40px;
+                    height: 6vh;
+                    background-color: aquamarine;
+                    border-radius: 0 10px 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                :hover {
+                    width: 15%;
+                    height: 5vh;
+                    right: 50px;
+                    background-color: aquamarine;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & i {
+                    display: flex;
+                    color: white;
+                }
+            }
+        }
+        & i {
+            display: none;
+        }
     }
 }
 .btn-commander {
@@ -136,7 +210,7 @@ main img {
         border: none;
         border-radius: 25px;
         color: $main-white;
-        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 8px grey;
         background: linear-gradient(1turn, $color-purple-principal, $color-pink-principal);
         &:hover {
             background: linear-gradient(1turn, #9e66e4, #fd8ede);
@@ -144,6 +218,7 @@ main img {
     }
     
 }
+
 
 /*FOOTER PARTY */
 footer {
@@ -153,11 +228,28 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    @media (max-width: 1920px) and (min-width: 1080px) {
+        height: 12vh;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
     h3 {
         font-family: 'Shrikhand', cursive;
         margin: 20px;
         font-weight: 500;
         font-size: 18px;
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+        }
+    }
+    
+    .a_propos {
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+        }
     }
     .flex {
         i{
@@ -165,7 +257,15 @@ footer {
             margin-left: 20px;
         }
     }
-    .a_propos a {
+    .info-contact{
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+        }
+        a p{
+            margin: 8px 20px;
+        }
+    }
+    & a {
         color: white;
         text-decoration: none;
         align-items: center;

@@ -25,6 +25,7 @@ header nav {
   header nav {
     justify-content: space-between;
     width: 55%;
+    padding: 20px;
   }
 }
 header nav .arrow-left {
@@ -35,6 +36,11 @@ header nav img {
   width: 150px;
 }
 
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main {
+    padding-bottom: 159px;
+  }
+}
 main img {
   width: 100%;
   position: absolute;
@@ -59,6 +65,8 @@ main .container-body-content {
 @media (max-width: 1920px) and (min-width: 1080px) {
   .section-gout {
     width: 50%;
+    top: 358px;
+    padding: 65px 130px;
   }
 }
 .section-gout .section-title-goût-principal {
@@ -66,6 +74,11 @@ main .container-body-content {
   align-items: center;
   width: 33vh;
   margin: 0 0px 20px 0;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-gout .section-title-goût-principal {
+    margin-left: 140px;
+  }
 }
 .section-gout .section-title-goût-principal h1 {
   font-family: "Shrikhand";
@@ -79,7 +92,7 @@ main .container-body-content {
 }
 @media (max-width: 1920px) and (min-width: 1080px) {
   .section-gout .section-title-goût-principal .hearts {
-    left: 420px;
+    left: 23px;
   }
 }
 .section-gout .section-title-goût-principal .hearts .likes {
@@ -139,6 +152,11 @@ main .container-body-content {
 .section-body-content .section-text-euro .card {
   width: 240px;
   padding: 10px;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-body-content .section-text-euro .card {
+    width: 100%;
+  }
 }
 .section-body-content .section-text-euro .card h4, .section-body-content .section-text-euro .card p {
   text-overflow: ellipsis;

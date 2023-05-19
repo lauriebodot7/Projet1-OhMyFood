@@ -21,20 +21,40 @@ header nav {
   background-color: white;
   width: 90%;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  header nav {
+    justify-content: space-between;
+    width: 55%;
+    padding: 20px;
+  }
+}
 header nav .arrow-left {
   font-size: x-large;
   color: #353535;
 }
 header nav img {
-  width: 50%;
+  width: 150px;
 }
 
+@media (max-width: 1920px) and (min-width: 1080px) {
+  main {
+    padding-bottom: 159px;
+  }
+}
 main img {
   width: 100%;
   position: absolute;
+  height: 45%;
+  object-fit: cover;
+}
+main .container-body-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section-gout {
+  width: 100%;
   position: relative;
   background: #EAEAEA;
   padding: 20px;
@@ -42,11 +62,23 @@ main img {
   top: 195px;
   margin-bottom: 200px;
 }
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-gout {
+    width: 50%;
+    top: 358px;
+    padding: 65px 130px;
+  }
+}
 .section-gout .section-title-goût-principal {
   display: flex;
   align-items: center;
   width: 33vh;
   margin: 0 0px 20px 0;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-gout .section-title-goût-principal {
+    margin-left: 140px;
+  }
 }
 .section-gout .section-title-goût-principal h1 {
   font-family: "Shrikhand";
@@ -56,7 +88,12 @@ main img {
 }
 .section-gout .section-title-goût-principal .hearts {
   position: relative;
-  right: -50px;
+  right: -20px;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-gout .section-title-goût-principal .hearts {
+    left: 23px;
+  }
 }
 .section-gout .section-title-goût-principal .hearts .likes {
   top: -12px;
@@ -106,11 +143,54 @@ main img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
   margin: 20px 0;
   border-radius: 10px;
+  width: 100%;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   background-color: #F7F7F7;
+}
+.section-body-content .section-text-euro .card {
+  width: 240px;
+  padding: 10px;
+}
+@media (max-width: 1920px) and (min-width: 1080px) {
+  .section-body-content .section-text-euro .card {
+    width: 100%;
+  }
+}
+.section-body-content .section-text-euro .card h4, .section-body-content .section-text-euro .card p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section-body-content .section-text-euro .mar-p {
+  margin-right: 10px;
+  display: flex;
+}
+.section-body-content .section-text-euro:hover .tcheck {
+  width: 40px;
+  height: 6vh;
+  background-color: aquamarine;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-body-content .section-text-euro:hover .tcheck :hover {
+  width: 15%;
+  height: 5vh;
+  right: 50px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-body-content .section-text-euro:hover .tcheck i {
+  display: flex;
+  color: white;
+}
+.section-body-content .section-text-euro i {
+  display: none;
 }
 
 .btn-commander {
@@ -125,7 +205,7 @@ main img {
   border: none;
   border-radius: 25px;
   color: #F3F3F3;
-  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px grey;
   background: linear-gradient(1turn, #9356DC, #FF79DA);
 }
 .btn-commander button:hover {

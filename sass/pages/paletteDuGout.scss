@@ -35,6 +35,7 @@ header {
         @media (max-width: 1920px) and (min-width: 1080px) {
             justify-content: space-between;
             width: 55%;
+            padding: 20px;
         }
         width: 90%;
         & .arrow-left {
@@ -48,6 +49,9 @@ header {
 }
 
 main {
+    @media (max-width: 1920px) and (min-width: 1080px) {
+        padding-bottom: 159px;
+    }
     & img {
         width: 100%;
         position: absolute;
@@ -73,12 +77,17 @@ main {
     margin-bottom: 200px;
     @media (max-width: 1920px) and (min-width: 1080px) {
         width: 50%;
+        top: 358px;
+        padding: 65px 130px;    
     }
     .section-title-goût-principal {
         display: flex;
         align-items: center;
         width: 33vh;
         margin: 0 0px 20px 0;
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            margin-left: 140px;
+        }
         h1 {
             font-family: 'Shrikhand';
             font-size: 28px;
@@ -89,7 +98,7 @@ main {
             position: relative;
             right: -20px;
             @media (max-width: 1920px) and (min-width: 1080px) {
-                left: 420px;
+                left: 23px;
             }
             & .likes {
                 top: -12px;
@@ -148,6 +157,9 @@ main {
         .card {
             width: 240px;
             padding: 10px;
+            @media (max-width: 1920px) and (min-width: 1080px) {
+                width: 100%;
+            }
             h4, p {
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -207,6 +219,7 @@ main {
     
 }
 
+
 /*FOOTER PARTY */
 footer {
     width: 100%;
@@ -215,11 +228,28 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    @media (max-width: 1920px) and (min-width: 1080px) {
+        height: 12vh;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
     h3 {
         font-family: 'Shrikhand', cursive;
         margin: 20px;
         font-weight: 500;
         font-size: 18px;
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+        }
+    }
+    
+    .a_propos {
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+        }
     }
     .flex {
         i{
@@ -227,7 +257,15 @@ footer {
             margin-left: 20px;
         }
     }
-    .a_propos a {
+    .info-contact{
+        @media (max-width: 1920px) and (min-width: 1080px) {
+            display: flex;
+        }
+        a p{
+            margin: 8px 20px;
+        }
+    }
+    & a {
         color: white;
         text-decoration: none;
         align-items: center;
