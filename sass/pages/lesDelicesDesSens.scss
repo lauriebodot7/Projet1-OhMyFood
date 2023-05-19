@@ -32,12 +32,15 @@ header {
         align-items: center;
         justify-content: space-evenly;
         background-color: white;
+        width: 90%;
         @media (min-width: 1080px) {
             justify-content: space-between;
             width: 55%;
             padding: 20px;
         }
-        width: 90%;
+        @media (max-width: 1079px) and (min-width: 720px) {
+            width: 78%;
+        }
         & .arrow-left {
             font-size: x-large;
             color: $main-footer;
@@ -55,8 +58,11 @@ main {
     & img {
         width: 100%;
         position: absolute;
-        height: 45%;
+        height: 26%;
         object-fit: cover;
+        @media (min-width: 1080px) {
+            height: 41%;
+        }
     }
     .container-body-content {
         display: flex;
@@ -78,7 +84,10 @@ main {
     @media (min-width: 1080px) {
         width: 50%;
         top: 358px;
-        padding: 65px 130px;    
+        padding: 65px 100px;  
+    }
+    @media (max-width: 1079px) and (min-width: 720px) {
+        width: 60%;
     }
     .section-title-goût-principal {
         display: flex;
@@ -86,7 +95,10 @@ main {
         width: 33vh;
         margin: 0 0px 20px 0;
         @media (min-width: 1080px) {
-            margin-left: 140px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            width: 90%;
         }
         h1 {
             font-family: 'Shrikhand';
