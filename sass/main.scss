@@ -306,7 +306,7 @@ main {
                 @media (min-width: 1080px) {
                     width: 100%;
                 }
-                h2 {
+                h3 {
                     padding: 0px 20px 0px 40px;
                     @media (min-width: 1080px) {
                         width: 31%;
@@ -445,7 +445,7 @@ footer {
         flex-direction: row-reverse;
         justify-content: flex-start;
     }
-    h3 {
+    h4 {
         font-family: 'Shrikhand', cursive;
         margin: 20px;
         font-weight: 500;
