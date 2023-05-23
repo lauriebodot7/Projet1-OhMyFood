@@ -120,6 +120,21 @@ main {
             }
             :hover {
                 z-index: 2;
+                animation-name: animate-coeur;
+                animation-duration: 4s;
+                transition-delay: 50ms;
+                transition-property: bottom;
+                @keyframes animate-coeur {
+                    0% {
+                        width: 0%;
+                    }
+                    50% {
+                        width: 50%;
+                    }
+                    100% {
+                        width: 100%;
+                    }
+                }
             }
             .likes-plein {
                 top: -12px;
