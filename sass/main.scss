@@ -389,12 +389,14 @@ main {
                     position: relative;
                     right: -68px;
                     width: 40%;
+                    
                     @media (min-width: 1080px) {
                         right: -9px;
                     }
                     @media (max-width: 1079px) and (min-width: 720px) {
                         right: -178px;
                     }
+                    
                     .likes {
                         top: -12px;
                         font-size: 23px;
@@ -406,6 +408,21 @@ main {
                     }
                     :hover {
                         z-index: 2;
+                        animation-name: animate-coeur;
+                        animation-duration: 4s;
+                        transition-delay: 50ms;
+                        transition-property: bottom;
+                        @keyframes animate-coeur {
+                            0% {
+                                width: 0%;
+                            }
+                            50% {
+                                width: 50%;
+                            }
+                            100% {
+                                width: 100%;
+                            }
+                        }
                     }
                     .likes-plein {
                         top: -12px;
