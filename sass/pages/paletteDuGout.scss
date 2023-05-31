@@ -199,26 +199,19 @@ main {
         }
         &:hover {
             .tcheck {
-                    width: 40px;
-                    height: 6vh;
-                    background-color: aquamarine;
-                    border-radius: 0 10px 10px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                :hover {
-                    width: 15%;
-                    height: 5vh;
-                    right: 50px;
-                    background-color: aquamarine;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                & i {
-                    display: flex;
-                    color: white;
-                }
+                transform: translateX(0px);
+                transition: all 3s;
+                border-radius: 0 10px 10px 0;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                width: 40px;
+                height: 6vh;
+                background-color: aquamarine;
+            }
+            & i {
+                display: flex;
+                color: white;
             }
         }
         & i {
@@ -226,6 +219,7 @@ main {
         }
     }
 }
+
 .btn-commander {
     text-align: center;
     display: flex;
