@@ -106,10 +106,11 @@
   transform: translateX(0);
 }
 
+/*FOOTER PARTY */
 footer {
   width: 100%;
   background: #353535;
-  color: white;
+  color: #FFFFFF;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -119,6 +120,7 @@ footer {
     height: 12vh;
     flex-direction: row-reverse;
     justify-content: flex-start;
+    align-items: center;
   }
 }
 footer h4 {
@@ -454,7 +456,6 @@ main .main_container_body .restaurant_articles .txt-img .hearts {
   position: relative;
   right: -68px;
   width: 40%;
-  transition: right 0.5s ease;
 }
 @media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .txt-img .hearts {
@@ -472,7 +473,6 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes {
   font-size: 23px;
   left: 0px;
   position: absolute;
-  transition: right 0.5s ease;
 }
 @media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .txt-img .hearts .likes {
@@ -483,8 +483,6 @@ main .main_container_body .restaurant_articles .txt-img .hearts :hover {
   z-index: 2;
   animation-name: animate-coeur;
   animation-duration: 3s;
-  transition-delay: 50ms;
-  transition: right 0.5s ease;
 }
 @keyframes animate-coeur {
   0% {

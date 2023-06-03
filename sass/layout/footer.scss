@@ -1,7 +1,9 @@
+
+/*FOOTER PARTY */
 footer {
     width: 100%;
     background: #353535;
-    color: white;
+    color: $main-white;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -9,6 +11,7 @@ footer {
         height: 12vh;
         flex-direction: row-reverse;
         justify-content: flex-start;
+        align-items: center;
     }
     h4 {
         font-family: 'Shrikhand', cursive;
@@ -21,7 +24,6 @@ footer {
             margin-right: 100px;
         }
     }
-    
     .a_propos {
         @media (min-width: 1080px) {
             display: flex;
@@ -51,4 +53,4 @@ footer {
             margin: 8px;
         }
     }
-}
+} 

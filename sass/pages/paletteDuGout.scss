@@ -1,55 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
-/* font familly */
-
-/*COLOR PARTY*/ 
-$main-body: #D2D2D2;
-$main-footer: #353535;
-$main-white: #F3F3F3;
-$grey-primaire: #EAEAEA;
-$color-purple-principal: #9356DC;
-$color-pink-principal: #FF79DA;
-$color-bg-grey-second: #F7F7F7;
-$color-bg-grey-tri: #7E7E7E;
-$color-green-clear: #99E2D0;
-$color-green-dark: #008766;
-$color-blue-clear: #89C8FA;
-$color-blue-dark: #003A68;
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* MAIN PARTY */
-header {
-    width: 100%;
-    & nav {
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: white;
-        width: 90%;
-        @media (min-width: 1080px) {
-            justify-content: space-between;
-            width: 55%;
-            padding: 20px;
-        }
-        @media (max-width: 1079px) and (min-width: 720px) {
-            width: 78%;
-        }
-        & .arrow-left {
-            font-size: x-large;
-            color: $main-footer;
-        }
-        & img {
-            width: 150px;
-        }
-    }
-}
+@import "../main";
 
 main {
     @media (min-width: 1080px) {
@@ -106,28 +56,31 @@ main {
         }
         .hearts {
             position: relative;
-            right: -20px;
+            right: -68px;
+            width: 40%;
             @media (min-width: 1080px) {
-                left: 23px;
+                right: -9px;
             }
-            & .likes {
+            @media (max-width: 1079px) and (min-width: 720px) {
+                right: -178px;
+            }
+            .likes {
+                width: 100%;
                 top: -12px;
                 font-size: 23px;
                 left: 0px;
                 position: absolute;
+                @media (min-width: 1080px) {
+                    left: 115px;
+                }
             }
             :hover {
                 z-index: 2;
                 animation-name: animate-coeur;
-                animation-duration: 4s;
-                transition-delay: 50ms;
-                transition-property: bottom;
+                animation-duration: 3s;
                 @keyframes animate-coeur {
                     0% {
                         width: 0%;
-                    }
-                    50% {
-                        width: 50%;
                     }
                     100% {
                         width: 100%;
@@ -140,6 +93,9 @@ main {
                 position: absolute;
                 font-size: 23px;
                 -webkit-text-fill-color: transparent;
+                @media (min-width: 1080px) {
+                    left: 115px;
+                }
                 :hover {
                     background: linear-gradient($color-purple-principal, $color-pink-principal);
                     -webkit-background-clip: text;
@@ -246,60 +202,3 @@ main {
     }
     
 }
-
-
-/*FOOTER PARTY */
-footer {
-    width: 100%;
-    background: #353535;
-    color: $main-white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    @media (min-width: 1080px) {
-        height: 12vh;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
-    }
-    h3 {
-        font-family: 'Shrikhand', cursive;
-        margin: 20px;
-        font-weight: 500;
-        font-size: 18px;
-        @media (min-width: 1080px) {
-            display: flex;
-            align-items: center;
-            margin-right: 100px;
-        }
-    }
-    
-    .a_propos {
-        @media (min-width: 1080px) {
-            display: flex;
-            align-items: center;
-        }
-    }
-    .flex {
-        i{
-            width: 20px;
-            margin-left: 20px;
-        }
-    }
-    .info-contact{
-        @media (min-width: 1080px) {
-            display: flex;
-        }
-        a p{
-            margin: 8px 20px;
-        }
-    }
-    & a {
-        color: white;
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        p {
-            margin: 8px;
-        }
-    }
-} 

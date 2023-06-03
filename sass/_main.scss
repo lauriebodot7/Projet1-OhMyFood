@@ -251,7 +251,6 @@ main {
                     position: relative;
                     right: -68px;
                     width: 40%;
-                    transition: right .5s ease;
                     @media (min-width: 1080px) {
                         right: -9px;
                     }
@@ -264,7 +263,6 @@ main {
                         font-size: 23px;
                         left: 0px;
                         position: absolute;
-                        transition: right .5s ease;
                         @media (min-width: 1080px) {
                             left: 115px;
                         }
@@ -273,8 +271,6 @@ main {
                         z-index: 2;
                         animation-name: animate-coeur;
                         animation-duration: 3s;
-                        transition-delay: 50ms;
-                        transition: right .5s ease;
                         @keyframes animate-coeur {
                             0% {
                                 width: 0%;
