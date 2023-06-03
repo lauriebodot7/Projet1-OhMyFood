@@ -71,8 +71,6 @@ main {
     }
 }
 
-
-
 .section-gout {
     width: 100%;
     position: relative;
@@ -199,7 +197,6 @@ main {
         }
         &:hover {
             .tcheck {
-                transform: translateX(0px);
                 transition: all 3s;
                 border-radius: 0 10px 10px 0;
                 align-items: center;
@@ -208,10 +205,20 @@ main {
                 width: 40px;
                 height: 6vh;
                 background-color: aquamarine;
+                animation: reverseAnimation 3s ease-in-out;
+                animation-direction: alternate;
+                i {
+                    display: flex;
+                    color: white;
+                }
             }
-            & i {
-                display: flex;
-                color: white;
+        }
+        @keyframes reverseAnimation {
+            from {
+                transform: translateX(40px);
+            }
+            to {
+                transform: translateX(0);
             }
         }
         & i {

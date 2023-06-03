@@ -1,0 +1,54 @@
+footer {
+    width: 100%;
+    background: #353535;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    @media (min-width: 1080px) {
+        height: 12vh;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+    h4 {
+        font-family: 'Shrikhand', cursive;
+        margin: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        @media (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+        }
+    }
+    
+    .a_propos {
+        @media (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .flex {
+        i{
+            width: 20px;
+            margin-left: 20px;
+        }
+    }
+    .info-contact{
+        @media (min-width: 1080px) {
+            display: flex;
+        }
+        a p{
+            margin: 8px 20px;
+        }
+    }
+    & a {
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        p {
+            margin: 8px;
+        }
+    }
+}

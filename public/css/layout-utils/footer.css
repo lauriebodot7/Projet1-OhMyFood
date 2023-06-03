@@ -1,0 +1,57 @@
+footer {
+  width: 100%;
+  background: #353535;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+@media (min-width: 1080px) {
+  footer {
+    height: 12vh;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+  margin: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+@media (min-width: 1080px) {
+  footer h4 {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1080px) {
+  footer .a_propos {
+    display: flex;
+    align-items: center;
+  }
+}
+footer .flex i {
+  width: 20px;
+  margin-left: 20px;
+}
+@media (min-width: 1080px) {
+  footer .info-contact {
+    display: flex;
+  }
+}
+footer .info-contact a p {
+  margin: 8px 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}
+footer a p {
+  margin: 8px;
+}
+
+/*# sourceMappingURL=footer.css.map */

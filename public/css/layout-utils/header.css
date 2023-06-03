@@ -1,0 +1,16 @@
+/*HEADER PARTY */
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+header nav img {
+  width: 150px;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=header.css.map */

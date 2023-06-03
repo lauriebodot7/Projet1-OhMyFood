@@ -201,7 +201,6 @@ main .container-body-content {
   display: flex;
 }
 .section-body-content .section-text-euro:hover .tcheck {
-  transform: translateX(0px);
   transition: all 3s;
   border-radius: 0 10px 10px 0;
   align-items: center;
@@ -210,10 +209,20 @@ main .container-body-content {
   width: 40px;
   height: 6vh;
   background-color: aquamarine;
+  animation: reverseAnimation 3s ease-in-out;
+  animation-direction: alternate;
 }
-.section-body-content .section-text-euro:hover i {
+.section-body-content .section-text-euro:hover .tcheck i {
   display: flex;
   color: white;
+}
+@keyframes reverseAnimation {
+  from {
+    transform: translateX(40px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .section-body-content .section-text-euro i {
   display: none;

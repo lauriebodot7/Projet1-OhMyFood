@@ -1,0 +1,13 @@
+header {
+    width: 100%;
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        & img {
+            width: 150px;
+            margin: 20px;
+        }
+    }
+}
