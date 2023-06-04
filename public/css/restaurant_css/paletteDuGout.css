@@ -692,6 +692,7 @@ main .container-body-content {
   border: 3px solid #99E2D0;
 }
 .section-body-content .section-text-euro {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -702,50 +703,42 @@ main .container-body-content {
   background-color: #F7F7F7;
 }
 .section-body-content .section-text-euro .card {
-  width: 240px;
+  width: 250px;
   padding: 10px;
-}
-@media (min-width: 1080px) {
-  .section-body-content .section-text-euro .card {
-    width: 100%;
-  }
 }
 .section-body-content .section-text-euro .card h4, .section-body-content .section-text-euro .card p {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.section-body-content .section-text-euro .mar-p {
-  margin-right: 10px;
-  display: flex;
-}
-.section-body-content .section-text-euro:hover .tcheck {
-  transition: all 3s;
-  border-radius: 0 10px 10px 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 40px;
-  height: 6vh;
-  background-color: aquamarine;
-  animation: reverseAnimation 3s ease-in-out;
-  animation-direction: alternate;
-}
-.section-body-content .section-text-euro:hover .tcheck i {
-  display: flex;
-  color: white;
-}
-@keyframes reverseAnimation {
-  from {
-    transform: translateX(40px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 .section-body-content .section-text-euro i {
   display: none;
 }
+.section-body-content .section-text-euro .mar-p {
+  border-radius: 0 10px 10px 0;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  animation: reverseAnimation 3s;
+  transition-property: all 3s;
+}
+.section-body-content .section-text-euro .mar-p i {
+  border-radius: 0 10px 10px 0;
+  padding: 20px;
+  background-color: aquamarine;
+  display: flex;
+  color: white;
+}
+.section-body-content .section-text-euro .mar-p .tcheck {
+  margin-right: -3.5rem;
+  margin-left: 1rem;
+  width: 3.5rem;
+  transition: all 1s;
+}
+.section-body-content .section-text-euro:hover .tcheck {
+  margin-right: 0;
+}
+@keyframes reverseAnimation {}
 
 .btn-commander {
   text-align: center;
