@@ -132,8 +132,12 @@ main {
         margin: 20px 0;
         border-radius: 10px;
         width: 100%;
+        overflow: hidden;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
+        :hover {
+            overflow: visible;
+        }
         .card {
             width: 240px;
             padding: 10px;
@@ -150,32 +154,35 @@ main {
             margin-right: 10px;
             display: flex;
         }
+        .tcheck i {
+            display: none;
+        }
         &:hover {
             .tcheck {
-                    width: 40px;
-                    height: 6vh;
-                    background-color: aquamarine;
-                    border-radius: 0 10px 10px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                :hover {
-                    width: 15%;
-                    height: 5vh;
-                    right: 50px;
-                    background-color: aquamarine;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                & i {
-                    display: flex;
+                padding: 20px;
+                margin-right: 0px;
+                background-color: aquamarine;
+                border-radius: 0 10px 10px 0;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation-name: animate-tcheck;
+                animation-duration: 3s;
+                i {
                     color: white;
+                    display: flex;
+                }
+                @keyframes animate-tcheck{
+                    from {
+                        transform: translateX(40px);
+                    }
+        
+                    to {
+                        transform: translateX(0);
+                    }
                 }
             }
-        }
-        & i {
-            display: none;
         }
     }
 }
@@ -196,5 +203,4 @@ main {
             background: linear-gradient(1turn, #9e66e4, #fd8ede);
         }
     }
-    
 }
