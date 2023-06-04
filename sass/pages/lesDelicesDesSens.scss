@@ -70,7 +70,7 @@ main {
             text-align: center;
             display: flex;
             justify-content: center;
-            width: 90%;
+            width: 70%;
         }
         h1 {
             font-family: 'Shrikhand';
@@ -95,19 +95,21 @@ main {
                 left: 0px;
                 position: absolute;
                 @media (min-width: 1080px) {
-                    left: 115px;
+                    display: flex;
+                    width: 20vw;
+                    justify-content: flex-end;
                 }
-            }
-            :hover {
-                z-index: 2;
-                animation-name: animate-coeur;
-                animation-duration: 3s;
-                @keyframes animate-coeur {
-                    0% {
-                        width: 0%;
-                    }
-                    100% {
-                        width: 100%;
+                :hover {
+                    z-index: 2;
+                    animation-name: animate-coeur;
+                    animation-duration: 4s;
+                    @keyframes animate-coeur {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -118,7 +120,9 @@ main {
                 font-size: 23px;
                 -webkit-text-fill-color: transparent;
                 @media (min-width: 1080px) {
-                    left: 115px;
+                    display: flex;
+                    width: 20vw;
+                    justify-content: flex-end;
                 }
                 :hover {
                     background: linear-gradient($color-purple-principal, $color-pink-principal);
@@ -127,6 +131,9 @@ main {
                     z-index: 2;
                 }
             }
+        }
+        & .txt-img-likes a{
+            color: black;
         }
     }
     .fa-regular {
@@ -148,6 +155,7 @@ main {
         border: 3px solid #99E2D0;
     }
     & .section-text-euro {
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -157,47 +165,43 @@ main {
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
         .card {
-            width: 240px;
+            width: 100%;
             padding: 10px;
-            @media (min-width: 1080px) {
-                width: 100%;
-            }
+            white-space: nowrap;
+            overflow: hidden;
             h4, p {
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
             }
         }
-        .mar-p {
-            margin-right: 10px;
-            display: flex;
+        i {
+            display: none;
         }
-        &:hover {
+        .mar-p {
+            border-radius: 0 10px 10px 0;
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+            transition-property: all 3s;
+            z-index: 2;
+            i {
+                border-radius: 0 10px 10px 0;
+                padding: 20px;
+                background-color: aquamarine;
+                display: flex;
+                color: white;
+            }
             .tcheck {
-                    width: 40px;
-                    height: 6vh;
-                    background-color: aquamarine;
-                    border-radius: 0 10px 10px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                :hover {
-                    width: 15%;
-                    height: 5vh;
-                    right: 50px;
-                    background-color: aquamarine;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                & i {
-                    display: flex;
-                    color: white;
-                }
+                $button-width: 3.5rem;
+                margin-right: -$button-width;
+                margin-left: 1rem;
+                width: $button-width;
+                transition: all 1s;
             }
         }
-        & i {
-            display: none;
+        &:hover .tcheck {
+            margin-right: 0;
         }
     }
 }

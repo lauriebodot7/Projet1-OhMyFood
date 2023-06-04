@@ -71,7 +71,7 @@ main {
             text-align: center;
             display: flex;
             justify-content: center;
-            width: 90%;
+            width: 70%;
         }
         h1 {
             font-family: 'Shrikhand';
@@ -96,19 +96,21 @@ main {
                 left: 0px;
                 position: absolute;
                 @media (min-width: 1080px) {
-                    left: 115px;
+                    display: flex;
+                    width: 20vw;
+                    justify-content: flex-end;
                 }
-            }
-            :hover {
-                z-index: 2;
-                animation-name: animate-coeur;
-                animation-duration: 3s;
-                @keyframes animate-coeur {
-                    0% {
-                        width: 0%;
-                    }
-                    100% {
-                        width: 100%;
+                :hover {
+                    z-index: 2;
+                    animation-name: animate-coeur;
+                    animation-duration: 4s;
+                    @keyframes animate-coeur {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -119,7 +121,9 @@ main {
                 font-size: 23px;
                 -webkit-text-fill-color: transparent;
                 @media (min-width: 1080px) {
-                    left: 115px;
+                    display: flex;
+                    width: 20vw;
+                    justify-content: flex-end;
                 }
                 :hover {
                     background: linear-gradient($color-purple-principal, $color-pink-principal);
@@ -151,64 +155,54 @@ main {
         display: flex;
         border: 3px solid #99E2D0;
     }
-    & .section-text-euro {
+   & .section-text-euro {
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 20px 0;
         border-radius: 10px;
         width: 100%;
-        overflow: hidden;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
-        :hover {
-            overflow: visible;
-        }
         .card {
-            width: 240px;
+            width: 100%;
             padding: 10px;
-            @media (min-width: 1080px) {
-                width: 100%;
-            }
+            white-space: nowrap;
+            overflow: hidden;
             h4, p {
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
             }
         }
-        .mar-p {
-            margin-right: 10px;
-            display: flex;
-        }
-        .tcheck i {
+        i {
             display: none;
         }
-        &:hover {
-            .tcheck {
-                padding: 20px;
-                margin-right: 0px;
-                background-color: aquamarine;
+        .mar-p {
+            border-radius: 0 10px 10px 0;
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+            transition-property: all 3s;
+            z-index: 2;
+            i {
                 border-radius: 0 10px 10px 0;
-                overflow: hidden;
+                padding: 20px;
+                background-color: aquamarine;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                animation-name: animate-tcheck;
-                animation-duration: 3s;
-                i {
-                    color: white;
-                    display: flex;
-                }
-                @keyframes animate-tcheck{
-                    from {
-                        transform: translateX(40px);
-                    }
-        
-                    to {
-                        transform: translateX(0);
-                    }
-                }
+                color: white;
             }
+            .tcheck {
+                $button-width: 3.5rem;
+                margin-right: -$button-width;
+                margin-left: 1rem;
+                width: $button-width;
+                transition: all 1s;
+            }
+        }
+        &:hover .tcheck {
+            margin-right: 0;
         }
     }
 }

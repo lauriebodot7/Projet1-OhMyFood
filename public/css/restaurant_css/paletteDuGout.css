@@ -703,8 +703,10 @@ main .container-body-content {
   background-color: #F7F7F7;
 }
 .section-body-content .section-text-euro .card {
-  width: 250px;
+  width: 100%;
   padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .section-body-content .section-text-euro .card h4, .section-body-content .section-text-euro .card p {
   text-overflow: ellipsis;
@@ -719,8 +721,8 @@ main .container-body-content {
   align-items: center;
   justify-content: space-evenly;
   display: flex;
-  animation: reverseAnimation 3s;
   transition-property: all 3s;
+  z-index: 2;
 }
 .section-body-content .section-text-euro .mar-p i {
   border-radius: 0 10px 10px 0;
@@ -738,7 +740,6 @@ main .container-body-content {
 .section-body-content .section-text-euro:hover .tcheck {
   margin-right: 0;
 }
-@keyframes reverseAnimation {}
 
 .btn-commander {
   text-align: center;

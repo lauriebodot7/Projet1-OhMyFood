@@ -166,8 +166,10 @@ main {
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         background-color: $color-bg-grey-second;
         .card {
-            width: 250px;
+            width: 100%;
             padding: 10px;
+            white-space: nowrap;
+            overflow: hidden;
             h4, p {
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -182,8 +184,8 @@ main {
             align-items: center;
             justify-content: space-evenly;
             display: flex;
-            animation: reverseAnimation 3s;
             transition-property: all 3s;
+            z-index: 2;
             i {
                 border-radius: 0 10px 10px 0;
                 padding: 20px;
@@ -202,10 +204,6 @@ main {
         &:hover .tcheck {
             margin-right: 0;
         }
-    }
-    
-    @keyframes reverseAnimation {
-        
     }
 }
 
