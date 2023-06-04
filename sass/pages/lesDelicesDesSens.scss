@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
 @import "../main";
+/* HEADER PARTY */
+header {
+    width: 100%;
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        & img {
+            width: 150px;
+            margin: 20px;
+        }
+    }
+    & .arrow-left {
+        margin-left: 20px;
+    }
+}
+header nav {
+    @media (min-width: 1080px) {
+        width: 58%;
+        justify-content: space-between;
+    }
+}
 
+/* MAIN PARTY */
 main {
     @media (min-width: 1080px) {
         padding-bottom: 159px;

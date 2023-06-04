@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
 @import "utils/colors";
-@import "layout/footer", "layout/header";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+/*HEADER PARTY*/
+header {
+    width: 100%;
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        & img {
+            width: 150px;
+            margin: 20px;
+        }
+    }
+}
+/* LOADER PARTY */
 .animate-loader-base {
     width: 100%;
     height: 101vh;
@@ -407,3 +420,59 @@ main {
         }
     }
 }
+
+/*FOOTER PARTY */
+footer {
+    width: 100%;
+    background: #353535;
+    color: $main-white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    @media (min-width: 1080px) {
+        height: 12vh;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    h4 {
+        font-family: 'Shrikhand', cursive;
+        margin: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        @media (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+        }
+    }
+    .a_propos {
+        @media (min-width: 1080px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .flex {
+        i{
+            width: 20px;
+            margin-left: 20px;
+        }
+    }
+    .info-contact{
+        @media (min-width: 1080px) {
+            display: flex;
+        }
+        a p{
+            margin: 8px 20px;
+        }
+    }
+    & a {
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        p {
+            margin: 8px;
+        }
+    }
+} 

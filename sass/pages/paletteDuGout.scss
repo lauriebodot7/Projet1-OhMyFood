@@ -1,6 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
 @import "../main";
 
+/* HEADER PARTY */
+header {
+    width: 100%;
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        & img {
+            width: 150px;
+            margin: 20px;
+        }
+    }
+    & .arrow-left {
+        margin-left: 20px;
+    }
+}
+header nav {
+    @media (min-width: 1080px) {
+        width: 58%;
+        justify-content: space-between;
+    }
+}
+
+/* MAIN PARTY */
 main {
     @media (min-width: 1080px) {
         padding-bottom: 159px;
@@ -46,7 +71,7 @@ main {
             text-align: center;
             display: flex;
             justify-content: center;
-            width: 90%;
+            width: 70%;
         }
         h1 {
             font-family: 'Shrikhand';
@@ -71,19 +96,21 @@ main {
                 left: 0px;
                 position: absolute;
                 @media (min-width: 1080px) {
-                    left: 115px;
+                    display: flex;
+                    width: 20vw;
+                    justify-content: flex-end;
                 }
-            }
-            :hover {
-                z-index: 2;
-                animation-name: animate-coeur;
-                animation-duration: 3s;
-                @keyframes animate-coeur {
-                    0% {
-                        width: 0%;
-                    }
-                    100% {
-                        width: 100%;
+                :hover {
+                    z-index: 2;
+                    animation-name: animate-coeur;
+                    animation-duration: 4s;
+                    @keyframes animate-coeur {
+                        0% {
+                            width: 0%;
+                        }
+                        100% {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -94,7 +121,9 @@ main {
                 font-size: 23px;
                 -webkit-text-fill-color: transparent;
                 @media (min-width: 1080px) {
-                    left: 115px;
+                    display: flex;
+                    width: 20vw;
+                    justify-content: flex-end;
                 }
                 :hover {
                     background: linear-gradient($color-purple-principal, $color-pink-principal);

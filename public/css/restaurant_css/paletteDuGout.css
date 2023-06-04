@@ -1,6 +1,29 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/*HEADER PARTY*/
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+header nav img {
+  width: 150px;
+  margin: 20px;
+}
+
+/* LOADER PARTY */
 .animate-loader-base {
   width: 100%;
   height: 101vh;
@@ -106,85 +129,6 @@
   animation-direction: normal;
   animation-fill-mode: none;*/
   transform: translateX(0);
-}
-
-/*FOOTER PARTY */
-footer {
-  width: 100%;
-  background: #353535;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-@media (min-width: 1080px) {
-  footer {
-    height: 12vh;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
-footer h4 {
-  font-family: "Shrikhand", cursive;
-  margin: 20px;
-  font-weight: 500;
-  font-size: 18px;
-}
-@media (min-width: 1080px) {
-  footer h4 {
-    display: flex;
-    align-items: center;
-    margin-right: 100px;
-  }
-}
-@media (min-width: 1080px) {
-  footer .a_propos {
-    display: flex;
-    align-items: center;
-  }
-}
-footer .flex i {
-  width: 20px;
-  margin-left: 20px;
-}
-@media (min-width: 1080px) {
-  footer .info-contact {
-    display: flex;
-  }
-}
-footer .info-contact a p {
-  margin: 8px 20px;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-  align-items: center;
-  display: flex;
-}
-footer a p {
-  margin: 8px;
-}
-
-header {
-  width: 100%;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-header nav img {
-  width: 150px;
-  margin: 20px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 /* MAIN BODY CONTAINER PARTY */
@@ -516,6 +460,90 @@ main .main_container_body .restaurant_articles .txt-img .txt-img-likes a {
   color: black;
 }
 
+/*FOOTER PARTY */
+footer {
+  width: 100%;
+  background: #353535;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+@media (min-width: 1080px) {
+  footer {
+    height: 12vh;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+footer h4 {
+  font-family: "Shrikhand", cursive;
+  margin: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+@media (min-width: 1080px) {
+  footer h4 {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 1080px) {
+  footer .a_propos {
+    display: flex;
+    align-items: center;
+  }
+}
+footer .flex i {
+  width: 20px;
+  margin-left: 20px;
+}
+@media (min-width: 1080px) {
+  footer .info-contact {
+    display: flex;
+  }
+}
+footer .info-contact a p {
+  margin: 8px 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}
+footer a p {
+  margin: 8px;
+}
+
+/* HEADER PARTY */
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+header nav img {
+  width: 150px;
+  margin: 20px;
+}
+header .arrow-left {
+  margin-left: 20px;
+}
+
+@media (min-width: 1080px) {
+  header nav {
+    width: 58%;
+    justify-content: space-between;
+  }
+}
+
+/* MAIN PARTY */
 @media (min-width: 1080px) {
   main {
     padding-bottom: 159px;
@@ -570,7 +598,7 @@ main .container-body-content {
     text-align: center;
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 70%;
   }
 }
 .section-gout .section-title-goût-principal h1 {
@@ -603,13 +631,15 @@ main .container-body-content {
 }
 @media (min-width: 1080px) {
   .section-gout .section-title-goût-principal .hearts .likes {
-    left: 115px;
+    display: flex;
+    width: 20vw;
+    justify-content: flex-end;
   }
 }
-.section-gout .section-title-goût-principal .hearts :hover {
+.section-gout .section-title-goût-principal .hearts .likes :hover {
   z-index: 2;
   animation-name: animate-coeur;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 @keyframes animate-coeur {
   0% {
@@ -628,7 +658,9 @@ main .container-body-content {
 }
 @media (min-width: 1080px) {
   .section-gout .section-title-goût-principal .hearts .likes-plein {
-    left: 115px;
+    display: flex;
+    width: 20vw;
+    justify-content: flex-end;
   }
 }
 .section-gout .section-title-goût-principal .hearts .likes-plein :hover {
