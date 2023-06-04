@@ -143,11 +143,35 @@ main {
 }
 .section-body-content {
     width: 100%;
+    position: relative;
+    overflow: hidden;
     & .section-title-goût {
-        display: flex;
         flex-direction: column;
         h3 {
             font-weight: 100;
+        }
+    }
+    .section-gout-entrees{
+        animation-name: animate-chargement;
+        animation-duration: 10s;
+        position: static;
+    }
+    .section-gout-plats {
+        animation-name: animate-chargement;
+        animation-duration: 15s;
+        position: static;
+    }
+    .section-gout-desserts {
+        animation-name: animate-chargement;
+        animation-duration: 20s;
+        position: static;
+    }
+    @keyframes animate-chargement {
+        0% {
+            position: absolute;
+        }
+        100% {
+            position: static;
         }
     }
     & .barre_de_separation {
