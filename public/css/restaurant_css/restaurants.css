@@ -678,13 +678,37 @@ main .container-body-content {
 
 .section-body-content {
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .section-body-content .section-title-goût {
-  display: flex;
   flex-direction: column;
 }
 .section-body-content .section-title-goût h3 {
   font-weight: 100;
+}
+.section-body-content .section-gout-entrees {
+  animation-name: animate-chargement;
+  animation-duration: 10s;
+  position: static;
+}
+.section-body-content .section-gout-plats {
+  animation-name: animate-chargement;
+  animation-duration: 15s;
+  position: static;
+}
+.section-body-content .section-gout-desserts {
+  animation-name: animate-chargement;
+  animation-duration: 20s;
+  position: static;
+}
+@keyframes animate-chargement {
+  0% {
+    position: absolute;
+  }
+  100% {
+    position: static;
+  }
 }
 .section-body-content .barre_de_separation {
   width: 20%;
@@ -760,4 +784,4 @@ main .container-body-content {
   background: linear-gradient(1turn, #9e66e4, #fd8ede);
 }
 
-/*# sourceMappingURL=aLaFrancaise.css.map */
+/*# sourceMappingURL=restaurants.css.map */
