@@ -425,16 +425,18 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein :ho
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
-  font-size: 24px;
+  font-size: 25px;
   animation-name: animate-coeur;
   animation-duration: 0.5s;
 }
 @keyframes animate-coeur {
   0% {
+    opacity: -1;
     font-size: 16px;
   }
   100% {
-    font-size: 24px;
+    opacity: 1;
+    font-size: 25px;
   }
 }
 main .main_container_body .restaurant_articles .txt-img .txt-img-likes a {

@@ -341,7 +341,8 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards .nouve
 }
 main .main_container_body .restaurant_articles .restaurant_articles_cards .span-nouveau {
   padding: 10px;
-  right: 57px;
+  right: 31px;
+  margin: 14px;
   position: absolute;
   background-color: #99E2D0;
 }
@@ -359,7 +360,7 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards .span-
 @media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .restaurant_articles_cards .respo-nouveau {
     position: absolute;
-    margin: 20px;
+    margin: 6px;
     width: 38%;
   }
 }
@@ -426,16 +427,18 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein :ho
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
-  font-size: 24px;
+  font-size: 25px;
   animation-name: animate-coeur;
   animation-duration: 0.5s;
 }
 @keyframes animate-coeur {
   0% {
+    opacity: -1;
     font-size: 16px;
   }
   100% {
-    font-size: 24px;
+    opacity: 1;
+    font-size: 25px;
   }
 }
 main .main_container_body .restaurant_articles .txt-img .txt-img-likes a {
@@ -556,12 +559,14 @@ main .container-body-content {
   border-radius: 20px 20px 0 0;
   top: 195px;
   margin-bottom: 200px;
+  height: 63vh;
 }
 @media (min-width: 1080px) {
   .section-gout {
     width: 50%;
     top: 358px;
     padding: 65px 100px;
+    position: relative;
   }
 }
 @media (max-width: 1079px) and (min-width: 720px) {
@@ -603,7 +608,7 @@ main .container-body-content {
 }
 .section-gout .section-title-goût-principal .hearts .likes-plein {
   transition: all 3s;
-  font-size: 24px;
+  font-size: 25px;
   z-index: 2;
   position: absolute;
   -webkit-text-fill-color: transparent;
@@ -616,15 +621,17 @@ main .container-body-content {
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
-  font-size: 24px;
+  font-size: 25px;
   animation-name: animate-coeur;
   animation-duration: 0.5s;
 }
 @keyframes animate-coeur {
   0% {
+    opacity: -1;
     font-size: 16px;
   }
   100% {
+    opacity: 1;
     font-size: 24px;
   }
 }
@@ -653,19 +660,21 @@ main .container-body-content {
 }
 .section-body-content .section-gout-plats {
   animation-name: animate-chargement;
-  animation-duration: 15s;
+  animation-duration: 20s;
   position: static;
 }
 .section-body-content .section-gout-desserts {
   animation-name: animate-chargement;
-  animation-duration: 20s;
+  animation-duration: 30s;
   position: static;
 }
 @keyframes animate-chargement {
   0% {
+    opacity: -1;
     position: absolute;
   }
   100% {
+    opacity: 1;
     position: static;
   }
 }
@@ -723,12 +732,58 @@ main .container-body-content {
 .section-body-content .section-text-euro:hover .tcheck {
   margin-right: 0;
 }
+.section-body-content .animatee-entrees1, .section-body-content .animatee-entrees2, .section-body-content .animatee-entrees3,
+.section-body-content .animatee-plats1, .section-body-content .animatee-plats2, .section-body-content .animatee-plats3,
+.section-body-content .animatee-desserts1, .section-body-content .animatee-desserts2, .section-body-content .animatee-desserts3 {
+  animation-name: animate-chargement-cards;
+  position: static;
+}
+.section-body-content .animatee-entrees1 {
+  animation-duration: 4s;
+}
+.section-body-content .animatee-entrees2 {
+  animation-duration: 6s;
+}
+.section-body-content .animatee-entrees3 {
+  animation-duration: 8s;
+}
+.section-body-content .animatee-plats1 {
+  animation-duration: 8s;
+}
+.section-body-content .animatee-plats2 {
+  animation-duration: 10s;
+}
+.section-body-content .animatee-plats3 {
+  animation-duration: 12s;
+}
+.section-body-content .animatee-desserts1 {
+  animation-duration: 14s;
+}
+.section-body-content .animatee-desserts2 {
+  animation-duration: 16s;
+}
+.section-body-content .animatee-desserts3 {
+  animation-duration: 18s;
+}
+@keyframes animate-chargement-cards {
+  0% {
+    position: absolute;
+    transform: translateX(-400%);
+  }
+  100% {
+    position: static;
+    transform: translateX(0%);
+  }
+}
 
 .btn-commander {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
 }
 .btn-commander button {
   font-weight: 500;
@@ -741,6 +796,20 @@ main .container-body-content {
 }
 .btn-commander button:hover {
   background: linear-gradient(1turn, #9e66e4, #fd8ede);
+}
+
+header, footer, .container-body, .btn-commander {
+  animation-name: opacity-animate;
+  animation-duration: 6s;
+}
+
+@keyframes opacity-animate {
+  0% {
+    opacity: -1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */
