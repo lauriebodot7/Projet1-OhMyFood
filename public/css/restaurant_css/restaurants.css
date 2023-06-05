@@ -568,7 +568,7 @@ main .container-body-content {
     width: 50%;
     top: 358px;
     padding: 27px 100px;
-    height: 108vh;
+    height: 118vh;
   }
 }
 @media (max-width: 1079px) and (min-width: 720px) {
@@ -750,6 +750,9 @@ main .container-body-content {
 }
 .section-body-content .animatee-entrees3 {
   animation-duration: 8s;
+}
+.section-body-content .animatee-entrees4 {
+  animation-duration: 10s;
 }
 .section-body-content .animatee-plats1 {
   animation-duration: 8s;
