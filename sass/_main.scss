@@ -380,7 +380,7 @@ main {
                     }
                     .likes-plein {
                         transition: all 3s;
-                        font-size: 28px;
+                        font-size: 19px;
                         z-index: 2;
                         position: absolute;
                         -webkit-text-fill-color: transparent;
@@ -394,7 +394,7 @@ main {
                             -webkit-background-clip: text;
                             opacity: 1;
                             z-index: 2;
-                            font-size: 28px;
+                            font-size: 19px;
                             animation-name: animate-coeur;
                             animation-duration: 0.5s;
                             @keyframes animate-coeur {
@@ -402,7 +402,7 @@ main {
                                     font-size: 16px;
                                 }
                                 100% {
-                                    font-size: 28px;
+                                    font-size: 19px;
                                 }
                             }
                         }

@@ -416,7 +416,7 @@ main .main_container_body .restaurant_articles .txt-img .hearts :hover {
 }
 main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
   transition: all 3s;
-  font-size: 28px;
+  font-size: 19px;
   z-index: 2;
   position: absolute;
   -webkit-text-fill-color: transparent;
@@ -431,7 +431,7 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein :ho
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
-  font-size: 28px;
+  font-size: 19px;
   animation-name: animate-coeur;
   animation-duration: 0.5s;
 }
@@ -440,7 +440,7 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein :ho
     font-size: 16px;
   }
   100% {
-    font-size: 28px;
+    font-size: 19px;
   }
 }
 main .main_container_body .restaurant_articles .txt-img .txt-img-likes a {
@@ -533,7 +533,7 @@ header .arrow-left {
 /* MAIN PARTY */
 @media (min-width: 1080px) {
   main {
-    padding-bottom: 159px;
+    padding-bottom: 162px;
   }
 }
 main img {
@@ -554,21 +554,21 @@ main .container-body-content {
 }
 
 .section-gout {
-  width: 100%;
   position: relative;
   background: #EAEAEA;
   padding: 20px;
   border-radius: 20px 20px 0 0;
   top: 195px;
   margin-bottom: 200px;
-  height: 63vh;
+  height: 109vh;
+  width: 100%;
 }
 @media (min-width: 1080px) {
   .section-gout {
     width: 50%;
     top: 358px;
-    padding: 65px 100px;
-    position: relative;
+    padding: 27px 100px;
+    height: 108vh;
   }
 }
 @media (max-width: 1079px) and (min-width: 720px) {
@@ -612,7 +612,7 @@ main .container-body-content {
 }
 .section-gout .section-title-goût-principal .hearts .likes-plein {
   transition: all 3s;
-  font-size: 28px;
+  font-size: 19px;
   z-index: 2;
   position: absolute;
   -webkit-text-fill-color: transparent;
@@ -627,7 +627,7 @@ main .container-body-content {
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
-  font-size: 28px;
+  font-size: 19px;
   animation-name: animate-coeur;
   animation-duration: 0.5s;
 }
@@ -636,7 +636,7 @@ main .container-body-content {
     font-size: 16px;
   }
   100% {
-    font-size: 28px;
+    font-size: 19px;
   }
 }
 .section-gout .section-title-goût-principal .txt-img-likes a {
@@ -785,9 +785,6 @@ main .container-body-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
-  bottom: 20px;
-  left: 45%;
 }
 .btn-commander button {
   font-weight: 500;
