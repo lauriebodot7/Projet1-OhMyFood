@@ -65,13 +65,12 @@ main {
     .section-title-goût-principal {
         display: flex;
         align-items: center;
-        width: 33vh;
+        justify-content: space-between;
+        width: 100%;
         margin: 0 0px 20px 0;
         @media (min-width: 1080px) {
             text-align: center;
             display: flex;
-            justify-content: center;
-            width: 70%;
         }
         h1 {
             font-family: 'Shrikhand';
@@ -80,56 +79,42 @@ main {
             font-weight: 400;
         }
         .hearts {
-            position: relative;
-            right: -68px;
-            width: 40%;
-            @media (min-width: 1080px) {
-                right: -9px;
-            }
-            @media (max-width: 1079px) and (min-width: 720px) {
-                right: -178px;
-            }
+            display: flex;
+            align-items: center;
             .likes {
-                width: 100%;
-                top: -12px;
-                font-size: 23px;
-                left: 0px;
-                position: absolute;
-                @media (min-width: 1080px) {
-                    display: flex;
-                    width: 20vw;
-                    justify-content: flex-end;
-                }
-                :hover {
-                    z-index: 2;
-                    animation-name: animate-coeur;
-                    animation-duration: 4s;
-                    @keyframes animate-coeur {
-                        0% {
-                            width: 0%;
-                        }
-                        100% {
-                            width: 100%;
-                        }
-                    }
-                }
+                font-size: 23px;           
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            :hover {
+                z-index: 1;
             }
             .likes-plein {
-                top: -12px;
-                left: 0px;
+                transition: all 3s;
+                font-size: 24px;
+                z-index: 2;
                 position: absolute;
-                font-size: 23px;
                 -webkit-text-fill-color: transparent;
-                @media (min-width: 1080px) {
-                    display: flex;
-                    width: 20vw;
-                    justify-content: flex-end;
-                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 :hover {
                     background: linear-gradient($color-purple-principal, $color-pink-principal);
                     -webkit-background-clip: text;
                     opacity: 1;
                     z-index: 2;
+                    font-size: 24px;
+                    animation-name: animate-coeur;
+                    animation-duration: 0.5s;
+                    @keyframes animate-coeur {
+                        0% {
+                            font-size: 16px;
+                        }
+                        100% {
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
         }

@@ -339,7 +339,8 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards .nouve
 }
 main .main_container_body .restaurant_articles .restaurant_articles_cards .span-nouveau {
   padding: 10px;
-  right: 57px;
+  right: 31px;
+  margin: 14px;
   position: absolute;
   background-color: #99E2D0;
 }
@@ -357,7 +358,7 @@ main .main_container_body .restaurant_articles .restaurant_articles_cards .span-
 @media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .restaurant_articles_cards .respo-nouveau {
     position: absolute;
-    margin: 20px;
+    margin: 6px;
     width: 38%;
   }
 }
@@ -381,7 +382,7 @@ main .main_container_body .restaurant_articles .les_articles {
   }
 }
 main .main_container_body .restaurant_articles .txt-img {
-  width: 100%;
+  width: 95%;
   margin: 13px 8px;
   display: flex;
   align-items: center;
@@ -397,62 +398,44 @@ main .main_container_body .restaurant_articles .txt-img a {
   text-decoration: none;
 }
 main .main_container_body .restaurant_articles .txt-img .hearts {
-  position: relative;
-  right: -68px;
-  width: 40%;
-}
-@media (min-width: 1080px) {
-  main .main_container_body .restaurant_articles .txt-img .hearts {
-    right: -9px;
-  }
-}
-@media (max-width: 1079px) and (min-width: 720px) {
-  main .main_container_body .restaurant_articles .txt-img .hearts {
-    right: -178px;
-  }
+  display: flex;
+  align-items: center;
 }
 main .main_container_body .restaurant_articles .txt-img .hearts .likes {
-  width: 100%;
-  top: -12px;
   font-size: 23px;
-  left: 0px;
-  position: absolute;
-}
-@media (min-width: 1080px) {
-  main .main_container_body .restaurant_articles .txt-img .hearts .likes {
-    left: 115px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .main_container_body .restaurant_articles .txt-img .hearts :hover {
-  z-index: 2;
-  animation-name: animate-coeur;
-  animation-duration: 3s;
-}
-@keyframes animate-coeur {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
+  z-index: 1;
 }
 main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
-  top: -12px;
-  left: 0px;
+  transition: all 3s;
+  font-size: 24px;
+  z-index: 2;
   position: absolute;
-  font-size: 23px;
   -webkit-text-fill-color: transparent;
-}
-@media (min-width: 1080px) {
-  main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
-    left: 115px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein :hover {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
+  font-size: 24px;
+  animation-name: animate-coeur;
+  animation-duration: 0.5s;
+}
+@keyframes animate-coeur {
+  0% {
+    font-size: 16px;
+  }
+  100% {
+    font-size: 24px;
+  }
 }
 main .main_container_body .restaurant_articles .txt-img .txt-img-likes a {
   color: black;
