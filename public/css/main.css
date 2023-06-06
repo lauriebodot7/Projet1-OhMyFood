@@ -210,7 +210,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement {
 }
 @media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .title-fonc {
-    width: 78%;
+    width: 84%;
     display: flex;
   }
 }
@@ -308,7 +308,7 @@ main .main_container_body .restaurant_articles .title-fonc h3 {
 }
 @media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .title-fonc h3 {
-    width: 31%;
+    width: 25%;
     display: flex;
     justify-content: center;
   }
