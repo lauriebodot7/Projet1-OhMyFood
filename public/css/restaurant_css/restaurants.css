@@ -36,6 +36,7 @@ header nav img {
 .animate-loader-base .animaTion-contenu-main-loader {
   width: 30%;
   height: 5vh;
+  margin: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -158,26 +159,28 @@ main .main_container_body .header_body_reverse_info_lieu p {
 }
 main .main_container_body .header_body_reverse_info_button {
   width: 85%;
-  height: 25vh;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
 }
-main .main_container_body .header_body_reverse_info_button h1 {
+main .main_container_body .header_body_reverse_info_button h2 {
+  margin: 10px;
   font-size: 24px;
   width: 80%;
 }
 @media (min-width: 1080px) {
-  main .main_container_body .header_body_reverse_info_button h1 {
+  main .main_container_body .header_body_reverse_info_button h2 {
     font-size: 40px;
   }
 }
 main .main_container_body .header_body_reverse_info_button p {
+  margin: 20px;
   font-size: 18px;
 }
 main .main_container_body .header_body_reverse_info_button button {
+  margin: 20px;
   padding: 20px;
   border: none;
   border-radius: 25px;
@@ -201,7 +204,7 @@ main .main_container_body .header_body_reverse_info_button button:hover {
 main .main_container_body .header_body_reverse_info_fonctionnement {
   background-color: white;
   width: 100%;
-  padding: 30px 35px;
+  padding-top: 5px;
 }
 @media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement {
@@ -210,14 +213,18 @@ main .main_container_body .header_body_reverse_info_fonctionnement {
     align-items: center;
   }
 }
+main .main_container_body .header_body_reverse_info_fonctionnement .title-fonc {
+  margin: 20px;
+}
 @media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .title-fonc {
-    width: 78%;
+    width: 84%;
+    margin: 0px;
     display: flex;
   }
 }
 main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button {
-  height: 30vh;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -225,7 +232,6 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
 @media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button {
     flex-direction: row;
-    height: 17vh;
     width: 90%;
   }
 }
@@ -233,6 +239,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   width: 100%;
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 @media (min-width: 1080px) {
   main .main_container_body .header_body_reverse_info_fonctionnement .header_body_reverse_info_fonctionnement_button .choix_button {
@@ -280,7 +287,7 @@ main .main_container_body .header_body_reverse_info_fonctionnement .header_body_
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 25px;
+  left: 14px;
   color: #FFFFFF;
   background-color: #9356DC;
 }
@@ -310,7 +317,7 @@ main .main_container_body .restaurant_articles .title-fonc h3 {
 }
 @media (min-width: 1080px) {
   main .main_container_body .restaurant_articles .title-fonc h3 {
-    width: 31%;
+    width: 25%;
     display: flex;
     justify-content: center;
   }
@@ -537,6 +544,9 @@ header .arrow-left {
 }
 
 /* MAIN PARTY */
+main {
+  height: 1314px;
+}
 @media (min-width: 1080px) {
   main {
     height: 100%;
@@ -550,7 +560,7 @@ main img {
 }
 @media (min-width: 1080px) {
   main img {
-    height: 41%;
+    height: 33%;
   }
 }
 main .container-body-content {
@@ -567,7 +577,7 @@ main .container-body-content {
   border-radius: 20px 20px 0 0;
   top: 195px;
   margin-bottom: 139px;
-  height: 122vh;
+  height: 1300px;
   width: 100%;
 }
 @media (min-width: 1080px) {
@@ -575,7 +585,7 @@ main .container-body-content {
     width: 50%;
     top: 358px;
     padding: 27px 100px;
-    height: 118vh;
+    height: 142vh;
   }
 }
 @media (max-width: 1079px) and (min-width: 720px) {
@@ -619,7 +629,7 @@ main .container-body-content {
 }
 .section-gout .section-title-goût-principal .hearts .likes-plein {
   transition: all 3s;
-  font-size: 19px;
+  font-size: 24px;
   z-index: 2;
   position: absolute;
   -webkit-text-fill-color: transparent;
@@ -634,16 +644,16 @@ main .container-body-content {
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
-  font-size: 19px;
+  font-size: 24px;
   animation-name: animate-coeur;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
 }
 @keyframes animate-coeur {
   0% {
     font-size: 16px;
   }
   100% {
-    font-size: 19px;
+    font-size: 24px;
   }
 }
 .section-gout .section-title-goût-principal .txt-img-likes a {

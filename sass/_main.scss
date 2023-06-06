@@ -32,6 +32,7 @@ header {
     .animaTion-contenu-main-loader {
         width: 30%;
         height: 5vh;
+        margin: 30px 0;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -151,13 +152,13 @@ main {
         }
         .header_body_reverse_info_button {
             width: 85%;
-            height: 25vh;
             text-align: center;
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
             align-items: center;
-            h1 {
+            h2 {
+                margin: 10px;
                 font-size: 24px;
                 width: 80%;
                 @media (min-width: 1080px) {
@@ -165,9 +166,11 @@ main {
                 }
             }
             & p {
+                margin: 20px;
                 font-size: 18px;
             }
             & button {
+                margin: 20px;
                 padding: 20px;
                 border: none;
                 border-radius: 25px;
@@ -191,32 +194,34 @@ main {
         .header_body_reverse_info_fonctionnement {
             background-color: white;
             width: 100%;
-            padding: 30px 35px;
+            padding-top: 5px;
             @media (min-width: 1080px) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
             .title-fonc {
+                margin: 20px;
                 @media (min-width: 1080px) {
                     width: 84%;
+                    margin: 0px;
                     display: flex;
                 }
             }
             .header_body_reverse_info_fonctionnement_button {
-                height: 30vh;
+                margin: 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                     @media (min-width: 1080px) {
                         flex-direction: row;
-                        height: 17vh;
                         width: 90%;
                     }
                 .choix_button {
                     width: 100%;
                     display: flex;
                     align-items: center;
+                    margin: 20px 0;
                     @media (min-width: 1080px) {
                         width: 30%;
                     }
@@ -259,7 +264,7 @@ main {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        left: 25px;
+                        left: 14px;
                         color: $main-white;
                         background-color: $color-purple-principal;
                     }

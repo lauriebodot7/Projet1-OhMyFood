@@ -32,6 +32,7 @@ header nav {
 
 /* MAIN PARTY */
 main {
+    height: 1314px;
     @media (min-width: 1080px) {
         height: 100%;
     }
@@ -41,7 +42,7 @@ main {
         height: 26%;
         object-fit: cover;
         @media (min-width: 1080px) {
-            height: 41%;
+            height: 33%;
         }
     }
     .container-body-content {
@@ -59,13 +60,13 @@ main {
     border-radius: 20px 20px 0 0;
     top: 195px;
     margin-bottom: 139px;
-    height: 122vh;
+    height: 1300px;
     width: 100%;
     @media (min-width: 1080px) {
         width: 50%;
         top: 358px;
         padding: 27px 100px;
-        height: 118vh;
+        height: 142vh;
     }
     @media (max-width: 1079px) and (min-width: 720px) {
         width: 60%;
