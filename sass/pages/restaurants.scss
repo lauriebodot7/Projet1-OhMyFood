@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
 @import "../main";
 
+
+body {
+    height: 1455px;
+}
+
 /* HEADER PARTY */
 header {
     width: 100%;
@@ -28,7 +33,7 @@ header nav {
 /* MAIN PARTY */
 main {
     @media (min-width: 1080px) {
-        padding-bottom: 162px;
+        height: 100%;
     }
     & img {
         width: 100%;
@@ -40,6 +45,7 @@ main {
         }
     }
     .container-body-content {
+        position: relative;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -52,7 +58,7 @@ main {
     padding: 20px;
     border-radius: 20px 20px 0 0;
     top: 195px;
-    margin-bottom: 200px;
+    margin-bottom: 139px;
     height: 122vh;
     width: 100%;
     @media (min-width: 1080px) {
@@ -278,6 +284,9 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    animation-name: animate-chargement-btn;
+    animation: 6s ease-out;
+    position: static;
     & button {
         font-weight: 500;
         padding: 20px 45px;
@@ -291,6 +300,15 @@ main {
         }
     }
 }
+@keyframes animate-chargement-btn {
+    0% {
+        position: absolute;
+    }
+    100% {
+        position: static;
+    }
+}
+
 
 header, footer, .container-body, .btn-commander {
     animation-name: opacity-animate;

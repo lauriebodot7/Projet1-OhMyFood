@@ -421,6 +421,8 @@ footer {
     width: 100%;
     background: #353535;
     color: $main-white;
+    z-index: 5;
+    position: absolute;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
