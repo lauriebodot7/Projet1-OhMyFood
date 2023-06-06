@@ -416,7 +416,7 @@ main .main_container_body .restaurant_articles .txt-img .hearts :hover {
 }
 main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein {
   transition: all 3s;
-  font-size: 19px;
+  font-size: 24px;
   z-index: 2;
   position: absolute;
   -webkit-text-fill-color: transparent;
@@ -431,16 +431,16 @@ main .main_container_body .restaurant_articles .txt-img .hearts .likes-plein :ho
   -webkit-background-clip: text;
   opacity: 1;
   z-index: 2;
-  font-size: 19px;
+  font-size: 24px;
   animation-name: animate-coeur;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
 }
 @keyframes animate-coeur {
   0% {
     font-size: 16px;
   }
   100% {
-    font-size: 19px;
+    font-size: 24px;
   }
 }
 main .main_container_body .restaurant_articles .txt-img .txt-img-likes a {
@@ -743,7 +743,7 @@ main .container-body-content {
 .section-body-content .section-text-euro:hover .tcheck {
   margin-right: 0;
 }
-.section-body-content .animatee-entrees1, .section-body-content .animatee-entrees2, .section-body-content .animatee-entrees3,
+.section-body-content .animatee-entrees1, .section-body-content .animatee-entrees2, .section-body-content .animatee-entrees3, .section-body-content .animatee-entrees4,
 .section-body-content .animatee-plats1, .section-body-content .animatee-plats2, .section-body-content .animatee-plats3,
 .section-body-content .animatee-desserts1, .section-body-content .animatee-desserts2, .section-body-content .animatee-desserts3 {
   animation-name: animate-chargement-cards;
